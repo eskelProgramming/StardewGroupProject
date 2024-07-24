@@ -1,1 +1,0 @@
-# Stardew Group Project
