@@ -1,6 +1,6 @@
 ﻿namespace StardewGroupProject
 {
-	partial class AddNewFarm
+	partial class AddNewFarmForm
 	{
 		/// <summary>
 		/// Required designer variable.

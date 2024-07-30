@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace StardewGroupProject
 {
-	public partial class AddNewFarm : Form
+	public partial class BundlesForm : Form
 	{
-		public AddNewFarm()
+		public BundlesForm()
 		{
 			InitializeComponent();
+		}
+
+		private void btnCraftsRoom_Click(object sender, EventArgs e)
+		{
+			CraftsRoomForm craftsRoom = new();
+			craftsRoom.ShowDialog();
 		}
 	}
 }

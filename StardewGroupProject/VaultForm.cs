@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StardewGroupProject
 {
-	public partial class CraftsRoom : Form
+	public partial class VaultForm : Form
 	{
-		public CraftsRoom()
+		public VaultForm()
 		{
 			InitializeComponent();
 		}

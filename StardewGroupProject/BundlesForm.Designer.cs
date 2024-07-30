@@ -1,6 +1,6 @@
 ﻿namespace StardewGroupProject
 {
-	partial class Bundles
+	partial class BundlesForm
 	{
 		/// <summary>
 		/// Required designer variable.

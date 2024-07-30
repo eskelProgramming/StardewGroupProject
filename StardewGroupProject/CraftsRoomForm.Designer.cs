@@ -1,6 +1,6 @@
 ﻿namespace StardewGroupProject
 {
-	partial class CraftsRoom
+	partial class CraftsRoomForm
 	{
 		/// <summary>
 		/// Required designer variable.
