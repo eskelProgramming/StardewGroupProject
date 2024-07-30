@@ -28,12 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			checkedListBox1 = new CheckedListBox();
-			checkedListBox2 = new CheckedListBox();
-			checkedListBox3 = new CheckedListBox();
-			checkedListBox4 = new CheckedListBox();
-			checkedListBox5 = new CheckedListBox();
-			checkedListBox6 = new CheckedListBox();
+			cklSpringForaging = new CheckedListBox();
+			cklWinterForaging = new CheckedListBox();
+			cklExoticForaging = new CheckedListBox();
+			cklSummerForaging = new CheckedListBox();
+			cklConstruction = new CheckedListBox();
+			cklFallForaging = new CheckedListBox();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
@@ -42,109 +42,121 @@
 			label6 = new Label();
 			SuspendLayout();
 			// 
-			// checkedListBox1
+			// cklSpringForaging
 			// 
-			checkedListBox1.FormattingEnabled = true;
-			checkedListBox1.Location = new Point(225, 44);
-			checkedListBox1.Name = "checkedListBox1";
-			checkedListBox1.Size = new Size(120, 94);
-			checkedListBox1.TabIndex = 0;
+			cklSpringForaging.Font = new Font("Sitka Banner", 12F);
+			cklSpringForaging.FormattingEnabled = true;
+			cklSpringForaging.Location = new Point(225, 44);
+			cklSpringForaging.Name = "cklSpringForaging";
+			cklSpringForaging.Size = new Size(120, 73);
+			cklSpringForaging.TabIndex = 0;
 			// 
-			// checkedListBox2
+			// cklWinterForaging
 			// 
-			checkedListBox2.FormattingEnabled = true;
-			checkedListBox2.Location = new Point(35, 86);
-			checkedListBox2.Name = "checkedListBox2";
-			checkedListBox2.Size = new Size(120, 94);
-			checkedListBox2.TabIndex = 1;
+			cklWinterForaging.Font = new Font("Sitka Banner", 12F);
+			cklWinterForaging.FormattingEnabled = true;
+			cklWinterForaging.Location = new Point(35, 86);
+			cklWinterForaging.Name = "cklWinterForaging";
+			cklWinterForaging.Size = new Size(120, 73);
+			cklWinterForaging.TabIndex = 1;
 			// 
-			// checkedListBox3
+			// cklExoticForaging
 			// 
-			checkedListBox3.FormattingEnabled = true;
-			checkedListBox3.Location = new Point(225, 193);
-			checkedListBox3.Name = "checkedListBox3";
-			checkedListBox3.Size = new Size(120, 94);
-			checkedListBox3.TabIndex = 2;
+			cklExoticForaging.Font = new Font("Sitka Banner", 12F);
+			cklExoticForaging.FormattingEnabled = true;
+			cklExoticForaging.Location = new Point(225, 193);
+			cklExoticForaging.Name = "cklExoticForaging";
+			cklExoticForaging.Size = new Size(120, 73);
+			cklExoticForaging.TabIndex = 2;
 			// 
-			// checkedListBox4
+			// cklSummerForaging
 			// 
-			checkedListBox4.FormattingEnabled = true;
-			checkedListBox4.Location = new Point(67, 272);
-			checkedListBox4.Name = "checkedListBox4";
-			checkedListBox4.Size = new Size(120, 94);
-			checkedListBox4.TabIndex = 3;
+			cklSummerForaging.Font = new Font("Sitka Banner", 12F);
+			cklSummerForaging.FormattingEnabled = true;
+			cklSummerForaging.Location = new Point(67, 272);
+			cklSummerForaging.Name = "cklSummerForaging";
+			cklSummerForaging.Size = new Size(120, 73);
+			cklSummerForaging.TabIndex = 3;
 			// 
-			// checkedListBox5
+			// cklConstruction
 			// 
-			checkedListBox5.FormattingEnabled = true;
-			checkedListBox5.Location = new Point(409, 86);
-			checkedListBox5.Name = "checkedListBox5";
-			checkedListBox5.Size = new Size(120, 94);
-			checkedListBox5.TabIndex = 4;
+			cklConstruction.Font = new Font("Sitka Banner", 12F);
+			cklConstruction.FormattingEnabled = true;
+			cklConstruction.Location = new Point(409, 86);
+			cklConstruction.Name = "cklConstruction";
+			cklConstruction.Size = new Size(120, 73);
+			cklConstruction.TabIndex = 4;
 			// 
-			// checkedListBox6
+			// cklFallForaging
 			// 
-			checkedListBox6.FormattingEnabled = true;
-			checkedListBox6.Location = new Point(388, 272);
-			checkedListBox6.Name = "checkedListBox6";
-			checkedListBox6.Size = new Size(120, 94);
-			checkedListBox6.TabIndex = 5;
+			cklFallForaging.Font = new Font("Sitka Banner", 12F);
+			cklFallForaging.FormattingEnabled = true;
+			cklFallForaging.Location = new Point(388, 272);
+			cklFallForaging.Name = "cklFallForaging";
+			cklFallForaging.Size = new Size(120, 73);
+			cklFallForaging.TabIndex = 5;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(239, 26);
+			label1.Font = new Font("Sitka Banner", 12F);
+			label1.Location = new Point(229, 18);
 			label1.Name = "label1";
-			label1.Size = new Size(91, 15);
+			label1.Size = new Size(109, 23);
 			label1.TabIndex = 6;
 			label1.Text = "Spring Foraging";
 			// 
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Location = new Point(49, 68);
+			label2.Font = new Font("Sitka Banner", 12F);
+			label2.Location = new Point(44, 60);
 			label2.Name = "label2";
-			label2.Size = new Size(92, 15);
+			label2.Size = new Size(111, 23);
 			label2.TabIndex = 7;
 			label2.Text = "Winter Foraging";
 			// 
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.Location = new Point(239, 175);
+			label3.Font = new Font("Sitka Banner", 12F);
+			label3.Location = new Point(229, 167);
 			label3.Name = "label3";
-			label3.Size = new Size(89, 15);
+			label3.Size = new Size(105, 23);
 			label3.TabIndex = 8;
 			label3.Text = "Exotic Foraging";
 			// 
 			// label4
 			// 
 			label4.AutoSize = true;
-			label4.Location = new Point(76, 254);
+			label4.Font = new Font("Sitka Banner", 12F);
+			label4.Location = new Point(66, 246);
 			label4.Name = "label4";
-			label4.Size = new Size(102, 15);
+			label4.Size = new Size(121, 23);
 			label4.TabIndex = 9;
 			label4.Text = "Summer Foraging";
 			// 
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.Location = new Point(432, 68);
+			label5.Font = new Font("Sitka Banner", 12F);
+			label5.Location = new Point(419, 60);
 			label5.Name = "label5";
-			label5.Size = new Size(76, 15);
+			label5.Size = new Size(89, 23);
 			label5.TabIndex = 10;
 			label5.Text = "Construction";
 			// 
 			// label6
 			// 
 			label6.AutoSize = true;
-			label6.Location = new Point(409, 254);
+			label6.Font = new Font("Sitka Banner", 12F);
+			label6.Location = new Point(400, 246);
 			label6.Name = "label6";
-			label6.Size = new Size(75, 15);
+			label6.Size = new Size(91, 23);
 			label6.TabIndex = 11;
 			label6.Text = "Fall Foraging";
 			// 
-			// CraftsRoom
+			// CraftsRoomForm
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -155,26 +167,26 @@
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(checkedListBox6);
-			Controls.Add(checkedListBox5);
-			Controls.Add(checkedListBox4);
-			Controls.Add(checkedListBox3);
-			Controls.Add(checkedListBox2);
-			Controls.Add(checkedListBox1);
-			Name = "CraftsRoom";
-			Text = "Crafts Room";
+			Controls.Add(cklFallForaging);
+			Controls.Add(cklConstruction);
+			Controls.Add(cklSummerForaging);
+			Controls.Add(cklExoticForaging);
+			Controls.Add(cklWinterForaging);
+			Controls.Add(cklSpringForaging);
+			Name = "CraftsRoomForm";
+			Text = "Crafts Room Bundles";
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private CheckedListBox checkedListBox1;
-		private CheckedListBox checkedListBox2;
-		private CheckedListBox checkedListBox3;
-		private CheckedListBox checkedListBox4;
-		private CheckedListBox checkedListBox5;
-		private CheckedListBox checkedListBox6;
+		private CheckedListBox cklSpringForaging;
+		private CheckedListBox cklWinterForaging;
+		private CheckedListBox cklExoticForaging;
+		private CheckedListBox cklSummerForaging;
+		private CheckedListBox cklConstruction;
+		private CheckedListBox cklFallForaging;
 		private Label label1;
 		private Label label2;
 		private Label label3;

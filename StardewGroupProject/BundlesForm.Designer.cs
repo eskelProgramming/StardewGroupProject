@@ -56,6 +56,7 @@
 			btnVault.TabIndex = 1;
 			btnVault.Text = "Vault";
 			btnVault.UseVisualStyleBackColor = true;
+			btnVault.Click += btnVault_Click;
 			// 
 			// btnBulletinBoard
 			// 
@@ -66,6 +67,7 @@
 			btnBulletinBoard.TabIndex = 2;
 			btnBulletinBoard.Text = "Bulletin Board";
 			btnBulletinBoard.UseVisualStyleBackColor = true;
+			btnBulletinBoard.Click += btnBulletinBoard_Click;
 			// 
 			// btnPantry
 			// 
@@ -76,6 +78,7 @@
 			btnPantry.TabIndex = 3;
 			btnPantry.Text = "Pantry";
 			btnPantry.UseVisualStyleBackColor = true;
+			btnPantry.Click += btnPantry_Click;
 			// 
 			// btnFishTank
 			// 
@@ -86,6 +89,7 @@
 			btnFishTank.TabIndex = 4;
 			btnFishTank.Text = "Fish Tank";
 			btnFishTank.UseVisualStyleBackColor = true;
+			btnFishTank.Click += btnFishTank_Click;
 			// 
 			// btnBoilerRoom
 			// 
@@ -96,8 +100,9 @@
 			btnBoilerRoom.TabIndex = 5;
 			btnBoilerRoom.Text = "Boiler Room";
 			btnBoilerRoom.UseVisualStyleBackColor = true;
+			btnBoilerRoom.Click += btnBoilerRoom_Click;
 			// 
-			// Bundles
+			// BundlesForm
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -108,7 +113,7 @@
 			Controls.Add(btnBulletinBoard);
 			Controls.Add(btnVault);
 			Controls.Add(btnCraftsRoom);
-			Name = "Bundles";
+			Name = "BundlesForm";
 			Text = "Bundles";
 			ResumeLayout(false);
 		}

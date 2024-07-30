@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StardewGroupProject
 {
-	public partial class FishTanksForm : Form
+	public partial class FishTankForm : Form
 	{
-		public FishTanksForm()
+		public FishTankForm()
 		{
 			InitializeComponent();
 		}

@@ -22,5 +22,35 @@ namespace StardewGroupProject
 			CraftsRoomForm craftsRoom = new();
 			craftsRoom.ShowDialog();
 		}
+
+		private void btnPantry_Click(object sender, EventArgs e)
+		{
+			PantryForm pantry = new();
+			pantry.ShowDialog();
+		}
+
+		private void btnFishTank_Click(object sender, EventArgs e)
+		{
+			FishTankForm fishTank = new();
+			fishTank.ShowDialog();
+		}
+
+		private void btnBoilerRoom_Click(object sender, EventArgs e)
+		{
+			BoilerRoomForm boilerRoom = new();
+			boilerRoom.ShowDialog();
+		}
+
+		private void btnBulletinBoard_Click(object sender, EventArgs e)
+		{
+			BulletinBoardForm bulletinBoard = new();
+			bulletinBoard.ShowDialog();
+		}
+
+		private void btnVault_Click(object sender, EventArgs e)
+		{
+			VaultForm vault = new();
+			vault.ShowDialog();
+		}
 	}
 }
