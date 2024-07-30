@@ -136,7 +136,7 @@
 			Controls.Add(groupBox2);
 			Controls.Add(groupBox1);
 			Name = "VaultForm";
-			Text = "VaultForm";
+			Text = "Vault Bundles";
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
 			groupBox2.ResumeLayout(false);
