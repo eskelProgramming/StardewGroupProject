@@ -25,8 +25,8 @@ namespace StardewGroupProject.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// A list of the Bundles for the Farm. 
+        /// A list of Rooms in the Community Center
         /// </summary>
-        public List<Bundle> Bundles { get; set; }
+        public List<Room> Rooms { get; set; }
     }
 }
