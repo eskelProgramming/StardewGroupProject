@@ -35,7 +35,7 @@ namespace StardewGroupProject.Models
         /// if it has not. Default is false. 
         /// </summary>
         [DefaultValue(false)]
-        public Boolean Complete { get; set; }
+        public bool Complete { get; set; }
 
         /// <summary>
         /// The number of Items that must be completed

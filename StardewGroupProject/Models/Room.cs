@@ -32,6 +32,6 @@ namespace StardewGroupProject.Models
         /// false if they have not. 
         /// </summary>
         [DefaultValue(false)]
-        public Boolean Completed { get; set;}
+        public bool Completed { get; set;}
     }
 }
