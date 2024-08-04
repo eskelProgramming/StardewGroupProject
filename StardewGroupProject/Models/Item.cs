@@ -15,6 +15,13 @@ namespace StardewGroupProject.Models
     /// </summary>
     public class Item
     {
+        public Item(String name, int quantity)
+        {
+            Name = name;
+            Complete = false;
+            Quantity = quantity;
+        }
+
         /// <summary>
         /// The unique id of the item. 
         /// </summary>
