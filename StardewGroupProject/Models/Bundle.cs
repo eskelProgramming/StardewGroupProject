@@ -14,6 +14,20 @@ namespace StardewGroupProject.Models
     public class Bundle
     {
         /// <summary>
+        /// Represents a single Bundle
+        /// </summary>
+        /// <param name="name">The name of the Bundle</param>
+        /// <param name="items">A list of Items in the Bundle</param>
+        /// <param name="quantity">The number of Items requried for the Bundle to be Complete.</param>
+        public Bundle(String name, List<Item> items, int quantity)
+        {
+            Name = name;
+            Items = items;
+            Complete = false;
+            Quantity = quantity;
+        }
+
+        /// <summary>
         /// The unique id for the Bundle.
         /// </summary>
         [Key]
