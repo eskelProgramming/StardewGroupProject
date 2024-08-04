@@ -32,7 +32,7 @@ namespace StardewGroupProject.Models
         /// false if it has not. The default is false. 
         /// </summary>
         [DefaultValue(false)]
-        public Boolean Complete { get; set; }
+        public bool Complete { get; set; }
 
         /// <summary>
         /// The quantity of the item needed to complete the bundle.
