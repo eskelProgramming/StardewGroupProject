@@ -18,7 +18,7 @@ namespace StardewGroupProject.Models
         /// </summary>
         /// <param name="name">The name of the Room</param>
         /// <param name="bundles">The Bundles in the Room</param>
-        public Room(String name, List<Bundle> bundles)
+        public Room(string name, List<Bundle> bundles)
         {
             Name = name;
             Bundles = bundles;

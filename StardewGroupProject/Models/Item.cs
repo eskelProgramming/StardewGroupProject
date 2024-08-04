@@ -21,7 +21,7 @@ namespace StardewGroupProject.Models
         /// </summary>
         /// <param name="name">The name of the item</param>
         /// <param name="quantity">The number required to be added to the bundle</param>
-        public Item(String name, int quantity)
+        public Item(string name, int quantity)
         {
             Name = name;
             Complete = false;
