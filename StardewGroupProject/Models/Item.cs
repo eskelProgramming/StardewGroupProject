@@ -10,11 +10,17 @@ using System.Threading.Tasks;
 namespace StardewGroupProject.Models
 {
     /// <summary>
-    /// Represents an a unique item within a bundle. 
+    /// Represents an unique item within a bundle. 
     /// An item is specific to the bundle it is in.
     /// </summary>
     public class Item
     {
+        /// <summary>
+        /// Represents an unique item within a bundle.
+        /// An item is specific to the bundle it is in. 
+        /// </summary>
+        /// <param name="name">The name of the item</param>
+        /// <param name="quantity">The number required to be added to the bundle</param>
         public Item(String name, int quantity)
         {
             Name = name;
@@ -42,7 +48,7 @@ namespace StardewGroupProject.Models
         public bool Complete { get; set; }
 
         /// <summary>
-        /// The quantity of the item needed to complete the bundle.
+        /// The quantity of the item needed to be added to the bundle.
         /// </summary>
         public int Quantity { get; set; }
     }
