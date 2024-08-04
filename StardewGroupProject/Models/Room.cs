@@ -8,8 +8,23 @@ using System.Threading.Tasks;
 
 namespace StardewGroupProject.Models
 {
+    /// <summary>
+    /// Represents a single Room
+    /// </summary>
     public class Room
     {
+        /// <summary>
+        /// Represents a single Farm
+        /// </summary>
+        /// <param name="name">The name of the Room</param>
+        /// <param name="bundles">The Bundles in the Room</param>
+        public Room(String name, List<Bundle> bundles)
+        {
+            Name = name;
+            Bundles = bundles;
+            Completed = false;
+        }
+
         /// <summary>
         /// The unique primary key of the Room. 
         /// </summary>
