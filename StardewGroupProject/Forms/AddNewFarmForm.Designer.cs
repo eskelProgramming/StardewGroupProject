@@ -50,6 +50,7 @@
 			btnNewFarmCreate.TabIndex = 1;
 			btnNewFarmCreate.Text = "Create";
 			btnNewFarmCreate.UseVisualStyleBackColor = true;
+			btnNewFarmCreate.Click += btnNewFarmCreate_Click;
 			// 
 			// label1
 			// 
