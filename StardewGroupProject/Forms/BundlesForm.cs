@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StardewGroupProject.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,12 @@ namespace StardewGroupProject
 		{
 			VaultForm vault = new();
 			vault.ShowDialog();
+		}
+
+		private void btnAbandonedJojomart_Click(object sender, EventArgs e)
+		{
+			AbandonedJojomartForm abandonedJojomartForm = new();
+			abandonedJojomartForm.ShowDialog();
 		}
 	}
 }

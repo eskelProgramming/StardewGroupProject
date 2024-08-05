@@ -34,6 +34,7 @@
 			btnPantry = new Button();
 			btnFishTank = new Button();
 			btnBoilerRoom = new Button();
+			btnAbandonedJojomart = new Button();
 			SuspendLayout();
 			// 
 			// btnCraftsRoom
@@ -102,11 +103,24 @@
 			btnBoilerRoom.UseVisualStyleBackColor = true;
 			btnBoilerRoom.Click += btnBoilerRoom_Click;
 			// 
+			// btnAbandonedJojomart
+			// 
+			btnAbandonedJojomart.Font = new Font("Sitka Subheading", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			btnAbandonedJojomart.Location = new Point(176, 130);
+			btnAbandonedJojomart.Name = "btnAbandonedJojomart";
+			btnAbandonedJojomart.Size = new Size(107, 66);
+			btnAbandonedJojomart.TabIndex = 6;
+			btnAbandonedJojomart.Text = "Abandoned JojoMart";
+			btnAbandonedJojomart.UseVisualStyleBackColor = true;
+			btnAbandonedJojomart.Visible = false;
+			btnAbandonedJojomart.Click += btnAbandonedJojomart_Click;
+			// 
 			// BundlesForm
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(470, 346);
+			Controls.Add(btnAbandonedJojomart);
 			Controls.Add(btnBoilerRoom);
 			Controls.Add(btnFishTank);
 			Controls.Add(btnPantry);
@@ -126,5 +140,6 @@
 		private Button btnPantry;
 		private Button btnFishTank;
 		private Button btnBoilerRoom;
+		private Button btnAbandonedJojomart;
 	}
 }
