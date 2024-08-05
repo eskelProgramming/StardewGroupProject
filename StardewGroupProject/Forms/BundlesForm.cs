@@ -56,8 +56,8 @@ namespace StardewGroupProject
 
 		private void btnAbandonedJojomart_Click(object sender, EventArgs e)
 		{
-			AbandonedJojomartForm abandonedJojomartForm = new();
-			abandonedJojomartForm.ShowDialog();
+			AbandonedJojomartForm abandonedJojomart = new();
+			abandonedJojomart.ShowDialog();
 		}
 	}
 }
