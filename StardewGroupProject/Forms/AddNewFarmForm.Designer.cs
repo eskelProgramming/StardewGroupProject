@@ -71,6 +71,7 @@
 			btnNewFarmCancel.TabIndex = 3;
 			btnNewFarmCancel.Text = "Cancel";
 			btnNewFarmCancel.UseVisualStyleBackColor = true;
+			btnNewFarmCancel.Click += btnNewFarmCancel_Click;
 			// 
 			// AddNewFarmForm
 			// 

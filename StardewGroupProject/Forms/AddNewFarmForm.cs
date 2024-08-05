@@ -44,5 +44,10 @@ namespace StardewGroupProject
 				txtNewFarmName.Clear();
 			}
 		}
+
+		private void btnNewFarmCancel_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }
