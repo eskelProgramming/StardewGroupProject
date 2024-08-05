@@ -50,6 +50,7 @@
 			btnNewFarmCreate.TabIndex = 1;
 			btnNewFarmCreate.Text = "Create";
 			btnNewFarmCreate.UseVisualStyleBackColor = true;
+			btnNewFarmCreate.Click += btnNewFarmCreate_Click;
 			// 
 			// label1
 			// 
@@ -70,6 +71,7 @@
 			btnNewFarmCancel.TabIndex = 3;
 			btnNewFarmCancel.Text = "Cancel";
 			btnNewFarmCancel.UseVisualStyleBackColor = true;
+			btnNewFarmCancel.Click += btnNewFarmCancel_Click;
 			// 
 			// AddNewFarmForm
 			// 
