@@ -1,3 +1,6 @@
+using StardewGroupProject.Data;
+using StardewGroupProject.Models;
+
 namespace StardewGroupProject
 {
 	public partial class HomeForm : Form
@@ -11,6 +14,8 @@ namespace StardewGroupProject
 		{
 			AddNewFarmForm addNewFarm = new();
 			addNewFarm.ShowDialog();
+
+			FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
 		}
 
 		private void btnViewCommunityCenter_Click(object sender, EventArgs e)
@@ -20,5 +25,12 @@ namespace StardewGroupProject
 			bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
 			bundles.ShowDialog();
 		}
+
+		private void HomeForm_Load(object sender, EventArgs e)
+		{
+			FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
+		}
+
+
 	}
 }
