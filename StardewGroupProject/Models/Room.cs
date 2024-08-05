@@ -13,6 +13,8 @@ namespace StardewGroupProject.Models
     /// </summary>
     public class Room
     {
+		// Parameterless constructor required by EF Core
+		public Room() { }
         /// <summary>
         /// Represents a single Farm
         /// </summary>
