@@ -1,6 +1,6 @@
 ﻿namespace StardewGroupProject.Forms
 {
-    partial class Room
+    partial class RoomSelect
     {
         /// <summary>
         /// Required designer variable.
@@ -175,6 +175,7 @@
             Controls.Add(ckl1);
             Name = "Room";
             Text = "Room";
+            Load += Room_Load;
             ResumeLayout(false);
             PerformLayout();
         }
