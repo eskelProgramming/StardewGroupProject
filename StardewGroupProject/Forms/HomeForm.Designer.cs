@@ -70,11 +70,12 @@
 			// 
 			// cmbFarmNames
 			// 
-			cmbFarmNames.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+			cmbFarmNames.DropDownStyle = ComboBoxStyle.DropDownList;
+			cmbFarmNames.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			cmbFarmNames.FormattingEnabled = true;
 			cmbFarmNames.Location = new Point(90, 174);
 			cmbFarmNames.Name = "cmbFarmNames";
-			cmbFarmNames.Size = new Size(161, 29);
+			cmbFarmNames.Size = new Size(161, 31);
 			cmbFarmNames.TabIndex = 3;
 			// 
 			// label1
@@ -93,11 +94,11 @@
 			label2.Font = new Font("Sitka Subheading", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			label2.Location = new Point(12, 44);
 			label2.Name = "label2";
-			label2.Size = new Size(311, 28);
+			label2.Size = new Size(309, 28);
 			label2.TabIndex = 5;
 			label2.Text = "Welcome to the Community Center!";
 			// 
-			// Home
+			// HomeForm
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -108,8 +109,9 @@
 			Controls.Add(btnViewCommunityCenter);
 			Controls.Add(btnDeleteFarm);
 			Controls.Add(btnAddNewFarm);
-			Name = "Home";
+			Name = "HomeForm";
 			Text = "Home";
+			Load += HomeForm_Load;
 			ResumeLayout(false);
 			PerformLayout();
 		}
