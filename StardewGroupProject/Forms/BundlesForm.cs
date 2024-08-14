@@ -1,5 +1,4 @@
 ﻿using StardewGroupProject.Forms;
-using StardewGroupProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,11 +20,8 @@ namespace StardewGroupProject
 
 		private void btnCraftsRoom_Click(object sender, EventArgs e)
 		{
-			//CraftsRoomForm craftsRoom = new();
-			//craftsRoom.ShowDialog();
-
-			RoomSelect room = new("Crafts Room");
-			room.ShowDialog();
+			CraftsRoomForm craftsRoom = new();
+			craftsRoom.ShowDialog();
 		}
 
 		private void btnPantry_Click(object sender, EventArgs e)
