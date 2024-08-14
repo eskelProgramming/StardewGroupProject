@@ -3,12 +3,14 @@ using StardewGroupProject.Models;
 
 namespace StardewGroupProject
 {
-	public partial class HomeForm : Form
-	{
-		public HomeForm()
-		{
-			InitializeComponent();
-		}
+    public partial class HomeForm : Form
+    {
+        private Farm farm;
+
+        public HomeForm()
+        {
+            InitializeComponent();
+        }
 
 		private void btnAddNewFarm_Click(object sender, EventArgs e)
 		{

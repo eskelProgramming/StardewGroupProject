@@ -13,12 +13,20 @@ namespace StardewGroupProject
 {
 	public partial class BundlesForm : Form
 	{
+		private Farm farm;
+
 		public BundlesForm()
 		{
 			InitializeComponent();
 		}
 
-		private void btnCraftsRoom_Click(object sender, EventArgs e)
+        public BundlesForm(Farm farm)
+        {
+            InitializeComponent();
+			this.farm = farm;
+        }
+
+        private void btnCraftsRoom_Click(object sender, EventArgs e)
 		{
 			CraftsRoomForm craftsRoom = new();
 			craftsRoom.ShowDialog();

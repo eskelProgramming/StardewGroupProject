@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
 		/// <summary>
 		///  Required method for Designer support - do not modify
@@ -116,9 +116,9 @@
 			PerformLayout();
 		}
 
-		#endregion
+        #endregion
 
-		private Button btnAddNewFarm;
+        private Button btnAddNewFarm;
 		private Button btnDeleteFarm;
 		private Button btnViewCommunityCenter;
 		private ComboBox cmbFarmNames;

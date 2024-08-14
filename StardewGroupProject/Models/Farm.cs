@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StardewGroupProject.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -291,5 +292,12 @@ namespace StardewGroupProject.Models
         /// A list of Rooms in the Community Center
         /// </summary>
         public List<Room> Rooms { get; set; }
+
+        public Room GetRoom(string roomName)
+        {
+            FarmContext context = new();
+
+            return context.Rooms.FirstOrDefault(r => r.Name == roomName);
+        }
     }
 }
