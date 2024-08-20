@@ -296,7 +296,7 @@ namespace StardewGroupProject.Models
 
         public Room GetRoom(string roomName)
         {
-            return ObjectTransferHelper.Context.Rooms.FirstOrDefault(r => r.Name == roomName);
+            return ObjectTransferHelper.CurrentFarm.Rooms.FirstOrDefault(r => r.Name == roomName);
         }
     }
 }
