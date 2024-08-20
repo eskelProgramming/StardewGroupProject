@@ -156,7 +156,6 @@ namespace StardewGroupProject.Models
                                     new Item("Walleye", 1),
                                     new Item("Bream", 1),
                                     new Item("Eel", 1),
-                                    new Item("Largemouth Bass", 1)
                                 ], 3),
                             new Bundle("Specialty Fish",
                                 [
