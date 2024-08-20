@@ -12,27 +12,37 @@ namespace StardewGroupProject
             InitializeComponent();
         }
 
-		private void btnAddNewFarm_Click(object sender, EventArgs e)
-		{
-			AddNewFarmForm addNewFarm = new();
-			addNewFarm.ShowDialog();
+        private void btnAddNewFarm_Click(object sender, EventArgs e)
+        {
+            AddNewFarmForm addNewFarm = new();
+            addNewFarm.ShowDialog();
 
-			FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
-		}
+            FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
+        }
 
-		private void btnViewCommunityCenter_Click(object sender, EventArgs e)
-		{
-			BundlesForm bundles = new BundlesForm();
-			this.Hide();
-			bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
-			bundles.ShowDialog();
-		}
+        private void btnViewCommunityCenter_Click(object sender, EventArgs e)
+        {
+            BundlesForm bundles = new BundlesForm();
+            this.Hide();
+            bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
+            bundles.ShowDialog();
+        }
 
-		private void HomeForm_Load(object sender, EventArgs e)
-		{
-			FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
-		}
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+            FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
 
+            SetCurrentFarm();
+        }
 
-	}
+        private void cmbFarmNames_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetCurrentFarm();
+        }
+
+        private void SetCurrentFarm()
+        {
+            ObjectTransferHelper.CurrentFarm = (Farm)cmbFarmNames.SelectedItem;
+        }
+    }
 }
