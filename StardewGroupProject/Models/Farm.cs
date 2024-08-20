@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -295,9 +296,7 @@ namespace StardewGroupProject.Models
 
         public Room GetRoom(string roomName)
         {
-            FarmContext context = new();
-
-            return context.Rooms.FirstOrDefault(r => r.Name == roomName);
+            return ObjectTransferHelper.Context.Rooms.FirstOrDefault(r => r.Name == roomName);
         }
     }
 }

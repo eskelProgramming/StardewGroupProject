@@ -26,7 +26,7 @@ namespace StardewGroupProject
         private void LoadBundles()
         {
             // Load bundles into the form
-            var bundles = ObjectTransferHelper.CurrentFarm.Rooms[0].Bundles;
+            var bundles = ObjectTransferHelper.CurrentFarm.GetRoom("Crafts Room").Bundles;
 
             foreach (var item in bundles[0].Items)
             {
