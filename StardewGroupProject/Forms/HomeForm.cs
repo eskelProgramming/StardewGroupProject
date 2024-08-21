@@ -20,6 +20,7 @@ namespace StardewGroupProject
             addNewFarm.ShowDialog();
 
             FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
+            SetCurrentFarm();
         }
 
         private void btnViewCommunityCenter_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace StardewGroupProject
         private void HomeForm_Load(object sender, EventArgs e)
         {
             FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
+            SetCurrentFarm();
         }
 
         private void btnDeleteFarm_Click(object sender, EventArgs e)
