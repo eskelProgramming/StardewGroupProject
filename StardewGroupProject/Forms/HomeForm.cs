@@ -35,9 +35,23 @@ namespace StardewGroupProject
 
         private void btnDeleteFarm_Click(object sender, EventArgs e)
         {
-            var selectedFarm = cmbFarmNames.SelectedItem as Farm;
+            if (cmbFarmNames.SelectedIndex == -1)
+            {
+                MessageBox.Show("Must select a Farm, or add a new Farm!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete {cmbFarmNames.Text}?", "Confirmation", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    var selectedFarm = cmbFarmNames.SelectedItem as Farm;
 
-            FarmHelper.DeleteFarm(selectedFarm);
+                    FarmHelper.DeleteFarm(selectedFarm);
+
+                    MessageBox.Show($"{cmbFarmNames.Text} successfully deleted!", "Success");
+                }
+
+            }
 
             FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
         }
