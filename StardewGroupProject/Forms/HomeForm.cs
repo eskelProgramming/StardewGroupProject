@@ -48,9 +48,7 @@ namespace StardewGroupProject
                 DialogResult result = MessageBox.Show($"Are you sure you want to delete {cmbFarmNames.Text}?", "Confirmation", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    var selectedFarm = cmbFarmNames.SelectedItem as Farm;
-
-                    FarmHelper.DeleteFarm(selectedFarm);
+                    FarmHelper.DeleteFarm(ObjectTransferHelper.CurrentFarm);
 
                     MessageBox.Show($"{cmbFarmNames.Text} successfully deleted!", "Success");
                 }
