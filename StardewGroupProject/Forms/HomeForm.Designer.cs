@@ -56,6 +56,7 @@
             btnDeleteFarm.TabIndex = 1;
             btnDeleteFarm.Text = "Delete selected Farm";
             btnDeleteFarm.UseVisualStyleBackColor = true;
+            btnDeleteFarm.Click += btnDeleteFarm_Click;
             // 
             // btnViewCommunityCenter
             // 
