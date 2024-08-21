@@ -22,16 +22,14 @@ namespace StardewGroupProject
 
 		private void btnNewFarmCreate_Click(object sender, EventArgs e)
 		{
-			FarmContext farmContext = new(); // Creates a new instance of FarmContext to interact with the database
-
 			string newFarmName = txtNewFarmName.Text;
 
 			if (Validator.IsValidFarmName(newFarmName)) // Checks if the farm name is valid using the Validator class
 			{
 				Farm farm = new(newFarmName);
 
-				farmContext.Farms.Add(farm); // Adds the new Farm object to the Database using Entity Framework
-				farmContext.SaveChanges(); // Saves those changes
+				ObjectTransferHelper.Context.Farms.Add(farm); // Adds the new Farm object to the Database using Entity Framework
+                ObjectTransferHelper.Context.SaveChanges(); // Saves those changes
 
 				MessageBox.Show("Farm successfully added!");
 				Close();

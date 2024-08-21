@@ -12,6 +12,8 @@ namespace StardewGroupProject.Models
     /// </summary>
     public static class ObjectTransferHelper
     {
+        private static FarmContext _context;
+
         /// <summary>
         /// The Farm that was most recently selected by the user.
         /// </summary>
@@ -20,6 +22,20 @@ namespace StardewGroupProject.Models
         /// <summary>
         /// A reference to the FarmContext object that is used to interact with the database.
         /// </summary>
-        public static FarmContext Context { get; set; }
+        public static FarmContext Context
+        {
+            get
+            {
+                if (_context == null)
+                {
+                    _context = new FarmContext();
+                }
+                return _context;
+            }
+            set
+            {
+                _context = value;
+            }
+        }
     }
 }
