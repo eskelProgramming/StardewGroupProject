@@ -78,6 +78,7 @@
             cmbFarmNames.Name = "cmbFarmNames";
             cmbFarmNames.Size = new Size(161, 31);
             cmbFarmNames.TabIndex = 3;
+            cmbFarmNames.SelectedIndexChanged += cmbFarmNames_SelectedIndexChanged;
             // 
             // label1
             // 

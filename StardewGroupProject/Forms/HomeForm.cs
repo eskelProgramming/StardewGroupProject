@@ -7,6 +7,8 @@ namespace StardewGroupProject
 {
     public partial class HomeForm : Form
     {
+        private Farm farm;
+        
         public HomeForm()
         {
             InitializeComponent();
@@ -54,6 +56,18 @@ namespace StardewGroupProject
             }
 
             FarmHelper.PopulateFarmCmbBox(cmbFarmNames);
+
+            SetCurrentFarm();
+        }
+
+        private void cmbFarmNames_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetCurrentFarm();
+        }
+
+        private void SetCurrentFarm()
+        {
+            ObjectTransferHelper.CurrentFarm = (Farm)cmbFarmNames.SelectedItem;
         }
     }
 }

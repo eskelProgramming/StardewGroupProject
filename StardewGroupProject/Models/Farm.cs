@@ -1,7 +1,9 @@
-﻿using System;
+﻿using StardewGroupProject.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -154,7 +156,6 @@ namespace StardewGroupProject.Models
                                     new Item("Walleye", 1),
                                     new Item("Bream", 1),
                                     new Item("Eel", 1),
-                                    new Item("Largemouth Bass", 1)
                                 ], 3),
                             new Bundle("Specialty Fish",
                                 [
@@ -291,5 +292,10 @@ namespace StardewGroupProject.Models
         /// A list of Rooms in the Community Center
         /// </summary>
         public List<Room> Rooms { get; set; }
+
+        public Room GetRoom(string roomName)
+        {
+            return ObjectTransferHelper.CurrentFarm.Rooms.FirstOrDefault(r => r.Name == roomName);
+        }
     }
 }
