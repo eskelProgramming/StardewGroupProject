@@ -50,6 +50,7 @@
             cklSpringForaging.Name = "cklSpringForaging";
             cklSpringForaging.Size = new Size(120, 73);
             cklSpringForaging.TabIndex = 0;
+            cklSpringForaging.ItemCheck += cklSpringForaging_ItemCheck;
             // 
             // cklWinterForaging
             // 

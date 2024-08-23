@@ -1,4 +1,6 @@
-﻿using StardewGroupProject.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StardewGroupProject.Data;
+using StardewGroupProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +32,7 @@ namespace StardewGroupProject
 
             foreach (var item in bundles[0].Items)
             {
-                cklSpringForaging.Items.Add(item.Name);
+                cklSpringForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[1].Items)
@@ -56,6 +58,26 @@ namespace StardewGroupProject
             foreach (var item in bundles[5].Items)
             {
                 cklExoticForaging.Items.Add(item.Name);
+            }
+        }
+
+        private void cklSpringForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            var item = cklSpringForaging.Items[e.Index];
+
+            var myItem = item as Item;
+            if (myItem != null)
+            {
+                // Update the Complete property based on the checked state
+                myItem.Complete = e.NewValue == CheckState.Checked;
+
+                // Save changes to the database using EF Core
+                using (FarmContext context = ObjectTransferHelper.Context)
+                {
+                    context.Items.Update(myItem);
+                    context.SaveChanges();
+                }
             }
         }
     }
