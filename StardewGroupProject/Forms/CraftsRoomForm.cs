@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using StardewGroupProject.Data;
 using StardewGroupProject.Models;
 using System;
@@ -69,13 +70,15 @@ namespace StardewGroupProject
             var myItem = item as Item;
             if (myItem != null)
             {
-                // Update the Complete property based on the checked state
-                myItem.Complete = e.NewValue == CheckState.Checked;
-
-                // Save changes to the database using EF Core
-                ObjectTransferHelper.Context.Items.Update(myItem);
-                ObjectTransferHelper.Context.SaveChanges();
+                UpdateItems(e.NewValue == CheckState.Checked, myItem);
             }
+        }
+
+        private void UpdateItems(bool completionStatus, Item item)
+        {
+            item.Complete = completionStatus;
+            ObjectTransferHelper.Context.Items.Update(item);
+            ObjectTransferHelper.Context.SaveChanges();
         }
     }
 }
