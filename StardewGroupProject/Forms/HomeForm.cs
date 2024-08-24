@@ -65,9 +65,26 @@ namespace StardewGroupProject
             SetCurrentFarm();
         }
 
+        /// <summary>
+        /// Gets the currently selected Farm and sets it as the current Farm in the ObjectTransferHelper class.
+        /// </summary>
         private void SetCurrentFarm()
         {
-            ObjectTransferHelper.CurrentFarm = (Farm)cmbFarmNames.SelectedItem;
+            Farm? currFarm = cmbFarmNames.SelectedItem as Farm;
+            if (currFarm != null)
+            {
+                ObjectTransferHelper.CurrentFarm = ObjectTransferHelper.Context.Farms.FirstOrDefault(f => f.FarmId == currFarm.FarmId);
+
+                if (ObjectTransferHelper.CurrentFarm != null)
+                {
+                    ObjectTransferHelper.CurrentFarm.Rooms = ObjectTransferHelper.Context.Rooms
+                        .Include(r => r.Bundles)
+                        .ThenInclude(b => b.Items)
+                        .ToList();
+
+                    ObjectTransferHelper.CurrentFarm.Rooms.ForEach(r => r.Bundles.ForEach(b => b.Items.ForEach(i => i = ObjectTransferHelper.Context.Items.FirstOrDefault(it => it.ItemId == i.ItemId))));
+                }
+            }
         }
     }
 }
