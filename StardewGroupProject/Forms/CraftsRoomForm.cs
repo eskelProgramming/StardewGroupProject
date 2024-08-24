@@ -37,27 +37,27 @@ namespace StardewGroupProject
 
             foreach (var item in bundles[1].Items)
             {
-                cklSummerForaging.Items.Add(item.Name);
+                cklSummerForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[2].Items)
             {
-                cklFallForaging.Items.Add(item.Name);
+                cklFallForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[3].Items)
             {
-                cklWinterForaging.Items.Add(item.Name);
+                cklWinterForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[4].Items)
             {
-                cklConstruction.Items.Add(item.Name);
+                cklConstruction.Items.Add(item);
             }
 
             foreach (var item in bundles[5].Items)
             {
-                cklExoticForaging.Items.Add(item.Name);
+                cklExoticForaging.Items.Add(item);
             }
         }
 
@@ -73,11 +73,8 @@ namespace StardewGroupProject
                 myItem.Complete = e.NewValue == CheckState.Checked;
 
                 // Save changes to the database using EF Core
-                using (FarmContext context = ObjectTransferHelper.Context)
-                {
-                    context.Items.Update(myItem);
-                    context.SaveChanges();
-                }
+                ObjectTransferHelper.Context.Items.Update(myItem);
+                ObjectTransferHelper.Context.SaveChanges();
             }
         }
     }
