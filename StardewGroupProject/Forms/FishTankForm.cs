@@ -21,6 +21,40 @@ namespace StardewGroupProject
         private void FishTankForm_Load(object sender, EventArgs e)
         {
             LoadBundles();
+            UpdateCheckboxes();
+        }
+
+        private void UpdateCheckboxes()
+        {
+            for (int i = 0; i < cklRiverFish.Items.Count; i++)
+            {
+                cklRiverFish.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklRiverFish.Items[i]));
+            }
+
+            for (int i = 0; i < cklLakeFish.Items.Count; i++)
+            {
+                cklLakeFish.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklLakeFish.Items[i]));
+            }
+
+            for (int i = 0; i < cklOceanFish.Items.Count; i++)
+            {
+                cklOceanFish.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklOceanFish.Items[i]));
+            }
+
+            for (int i = 0; i < cklNightFishing.Items.Count; i++)
+            {
+                cklNightFishing.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklNightFishing.Items[i]));
+            }
+
+            for (int i = 0; i < cklCrabPot.Items.Count; i++)
+            {
+                cklCrabPot.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklCrabPot.Items[i]));
+            }
+
+            for (int i = 0; i < cklSpecialtyFish.Items.Count; i++)
+            {
+                cklSpecialtyFish.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklSpecialtyFish.Items[i]));
+            }
         }
 
         private void LoadBundles()

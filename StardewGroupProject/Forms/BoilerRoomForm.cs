@@ -21,6 +21,25 @@ namespace StardewGroupProject
         private void BoilerRoomForm_Load(object sender, EventArgs e)
         {
             LoadBundles();
+            UpdateCheckboxes();
+        }
+
+        private void UpdateCheckboxes()
+        {
+            for (int i = 0; i < cklBlacksmiths.Items.Count; i++)
+            {
+                cklBlacksmiths.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklBlacksmiths.Items[i]));
+            }
+
+            for (int i = 0; i < cklGeologists.Items.Count; i++)
+            {
+                cklGeologists.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklGeologists.Items[i]));
+            }
+
+            for (int i = 0; i < cklAdventurers.Items.Count; i++)
+            {
+                cklAdventurers.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklAdventurers.Items[i]));
+            }
         }
 
         private void LoadBundles()

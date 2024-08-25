@@ -21,6 +21,40 @@ namespace StardewGroupProject
         private void PantryForm_Load(object sender, EventArgs e)
         {
             LoadBundles();
+            UpdateCheckboxes();
+        }
+
+        private void UpdateCheckboxes()
+        {
+            for (int i = 0; i < cklSpringCrops.Items.Count; i++)
+            {
+                cklSpringCrops.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklSpringCrops.Items[i]));
+            }
+
+            for (int i = 0; i < cklSummerCrops.Items.Count; i++)
+            {
+                cklSummerCrops.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklSummerCrops.Items[i]));
+            }
+
+            for (int i = 0; i < cklFallCrops.Items.Count; i++)
+            {
+                cklFallCrops.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklFallCrops.Items[i]));
+            }
+
+            for (int i = 0; i < cklQualityCrops.Items.Count; i++)
+            {
+                cklQualityCrops.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklQualityCrops.Items[i]));
+            }
+
+            for (int i = 0; i < cklAnimal.Items.Count; i++)
+            {
+                cklAnimal.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklAnimal.Items[i]));
+            }
+
+            for (int i = 0; i < cklArtisan.Items.Count; i++)
+            {
+                cklArtisan.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklArtisan.Items[i]));
+            }
         }
 
         private void LoadBundles()
