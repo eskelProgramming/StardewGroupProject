@@ -29,17 +29,47 @@ namespace StardewGroupProject
 
             foreach (var item in boilerRoomBundles[0].Items)
             {
-                cklBlacksmiths.Items.Add(item.Name);
+                cklBlacksmiths.Items.Add(item);
             }
 
             foreach (var item in boilerRoomBundles[1].Items)
             {
-                cklGeologists.Items.Add(item.Name);
+                cklGeologists.Items.Add(item);
             }
 
             foreach (var item in boilerRoomBundles[2].Items)
             {
-                cklAdventurers.Items.Add(item.Name);
+                cklAdventurers.Items.Add(item);
+            }
+        }
+
+        private void cklBlacksmiths_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklBlacksmiths.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklGeologists_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklGeologists.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklAdventurers_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklAdventurers.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
             }
         }
     }
