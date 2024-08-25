@@ -29,32 +29,92 @@ namespace StardewGroupProject
 
             foreach (Item item in bundles[0].Items)
             {
-                cklSpringCrops.Items.Add(item.Name);
+                cklSpringCrops.Items.Add(item);
             }
 
             foreach (Item item in bundles[1].Items)
             {
-                cklSummerCrops.Items.Add(item.Name);
+                cklSummerCrops.Items.Add(item);
             }
 
             foreach (Item item in bundles[2].Items)
             {
-                cklFallCrops.Items.Add(item.Name);
+                cklFallCrops.Items.Add(item);
             }
 
             foreach (Item item in bundles[3].Items)
             {
-                cklQualityCrops.Items.Add(item.Name);
+                cklQualityCrops.Items.Add(item);
             }
 
             foreach (Item item in bundles[4].Items)
             {
-                cklAnimal.Items.Add(item.Name);
+                cklAnimal.Items.Add(item);
             }
 
             foreach (Item item in bundles[5].Items)
             {
-                cklArtisan.Items.Add(item.Name);
+                cklArtisan.Items.Add(item);
+            }
+        }
+
+        private void cklSpringCrops_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklSpringCrops.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklSummerCrops_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklSummerCrops.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklFallCrops_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklFallCrops.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklQualityCrops_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklQualityCrops.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklAnimal_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklAnimal.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklArtisan_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklArtisan.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
             }
         }
     }
