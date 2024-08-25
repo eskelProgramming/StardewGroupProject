@@ -65,20 +65,61 @@ namespace StardewGroupProject
         private void cklSpringForaging_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             // Get the item that was clicked
-            var item = cklSpringForaging.Items[e.Index];
-
-            var myItem = item as Item;
-            if (myItem != null)
+            Item item = (Item)cklSpringForaging.Items[e.Index];
+            if (item != null)
             {
-                UpdateItems(e.NewValue == CheckState.Checked, myItem);
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
             }
         }
 
-        private void UpdateItems(bool completionStatus, Item item)
+        private void cklSummerForaging_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            item.Complete = completionStatus;
-            ObjectTransferHelper.Context.Items.Update(item);
-            ObjectTransferHelper.Context.SaveChanges();
+            // Get the item that was clicked
+            Item item = (Item)cklSummerForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklFallForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklFallForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklWinterForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklWinterForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklConstruction_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklConstruction.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklExoticForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklExoticForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
         }
     }
 }
