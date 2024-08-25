@@ -44,9 +44,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Sitka Banner", 12F);
-            label6.Location = new Point(408, 238);
+            label6.Location = new Point(466, 317);
             label6.Name = "label6";
-            label6.Size = new Size(82, 23);
+            label6.Size = new Size(103, 29);
             label6.TabIndex = 23;
             label6.Text = "Enchanter's";
             // 
@@ -54,9 +54,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Sitka Banner", 12F);
-            label5.Location = new Point(423, 16);
+            label5.Location = new Point(483, 21);
             label5.Name = "label5";
-            label5.Size = new Size(54, 23);
+            label5.Size = new Size(66, 29);
             label5.TabIndex = 22;
             label5.Text = "Fodder";
             // 
@@ -64,9 +64,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Sitka Banner", 12F);
-            label4.Location = new Point(77, 238);
+            label4.Location = new Point(88, 317);
             label4.Name = "label4";
-            label4.Size = new Size(101, 23);
+            label4.Size = new Size(124, 29);
             label4.TabIndex = 21;
             label4.Text = "Field Research";
             // 
@@ -74,9 +74,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Sitka Banner", 12F);
-            label2.Location = new Point(110, 16);
+            label2.Location = new Point(126, 21);
             label2.Name = "label2";
-            label2.Size = new Size(34, 23);
+            label2.Size = new Size(42, 29);
             label2.TabIndex = 19;
             label2.Text = "Dye";
             // 
@@ -84,9 +84,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(264, 126);
+            label1.Location = new Point(302, 168);
             label1.Name = "label1";
-            label1.Size = new Size(48, 23);
+            label1.Size = new Size(60, 29);
             label1.TabIndex = 18;
             label1.Text = "Chef's";
             // 
@@ -94,52 +94,62 @@
             // 
             cklEnchanters.Font = new Font("Sitka Banner", 12F);
             cklEnchanters.FormattingEnabled = true;
-            cklEnchanters.Location = new Point(387, 264);
+            cklEnchanters.Location = new Point(442, 352);
+            cklEnchanters.Margin = new Padding(3, 4, 3, 4);
             cklEnchanters.Name = "cklEnchanters";
-            cklEnchanters.Size = new Size(120, 73);
+            cklEnchanters.Size = new Size(137, 88);
             cklEnchanters.TabIndex = 17;
+            cklEnchanters.ItemCheck += cklEnchanters_ItemCheck;
             // 
             // cklFodder
             // 
             cklFodder.Font = new Font("Sitka Banner", 12F);
             cklFodder.FormattingEnabled = true;
-            cklFodder.Location = new Point(387, 42);
+            cklFodder.Location = new Point(442, 56);
+            cklFodder.Margin = new Padding(3, 4, 3, 4);
             cklFodder.Name = "cklFodder";
-            cklFodder.Size = new Size(120, 73);
+            cklFodder.Size = new Size(137, 88);
             cklFodder.TabIndex = 16;
+            cklFodder.ItemCheck += cklFodder_ItemCheck;
             // 
             // cklFieldResearch
             // 
             cklFieldResearch.Font = new Font("Sitka Banner", 12F);
             cklFieldResearch.FormattingEnabled = true;
-            cklFieldResearch.Location = new Point(68, 264);
+            cklFieldResearch.Location = new Point(78, 352);
+            cklFieldResearch.Margin = new Padding(3, 4, 3, 4);
             cklFieldResearch.Name = "cklFieldResearch";
-            cklFieldResearch.Size = new Size(120, 73);
+            cklFieldResearch.Size = new Size(137, 88);
             cklFieldResearch.TabIndex = 15;
+            cklFieldResearch.ItemCheck += cklFieldResearch_ItemCheck;
             // 
             // cklDye
             // 
             cklDye.Font = new Font("Sitka Banner", 12F);
             cklDye.FormattingEnabled = true;
-            cklDye.Location = new Point(68, 42);
+            cklDye.Location = new Point(78, 56);
+            cklDye.Margin = new Padding(3, 4, 3, 4);
             cklDye.Name = "cklDye";
-            cklDye.Size = new Size(120, 73);
+            cklDye.Size = new Size(137, 88);
             cklDye.TabIndex = 13;
+            cklDye.ItemCheck += cklDye_ItemCheck;
             // 
             // cklChefs
             // 
             cklChefs.Font = new Font("Sitka Banner", 12F);
             cklChefs.FormattingEnabled = true;
-            cklChefs.Location = new Point(228, 152);
+            cklChefs.Location = new Point(261, 203);
+            cklChefs.Margin = new Padding(3, 4, 3, 4);
             cklChefs.Name = "cklChefs";
-            cklChefs.Size = new Size(120, 73);
+            cklChefs.Size = new Size(137, 88);
             cklChefs.TabIndex = 12;
+            cklChefs.ItemCheck += cklChefs_ItemCheck;
             // 
             // BulletinBoardForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(568, 405);
+            ClientSize = new Size(649, 540);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -150,6 +160,7 @@
             Controls.Add(cklFieldResearch);
             Controls.Add(cklDye);
             Controls.Add(cklChefs);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "BulletinBoardForm";
             Text = "Bulletin Board Bundles";
             Load += BulletinBoardForm_Load;
