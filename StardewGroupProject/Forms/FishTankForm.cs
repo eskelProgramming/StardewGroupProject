@@ -27,34 +27,94 @@ namespace StardewGroupProject
         {
             List<Bundle> bundles = ObjectTransferHelper.CurrentFarm.GetRoom("Fish Tank").Bundles;
 
-            foreach(Item item in bundles[0].Items)
+            foreach (Item item in bundles[0].Items)
             {
-                cklRiverFish.Items.Add(item.Name);
+                cklRiverFish.Items.Add(item);
             }
 
-            foreach(Item item in bundles[1].Items)
+            foreach (Item item in bundles[1].Items)
             {
-                cklLakeFish.Items.Add(item.Name);
+                cklLakeFish.Items.Add(item);
             }
 
-            foreach(Item item in bundles[2].Items)
+            foreach (Item item in bundles[2].Items)
             {
-                cklOceanFish.Items.Add(item.Name);
+                cklOceanFish.Items.Add(item);
             }
 
-            foreach(Item item in bundles[3].Items)
+            foreach (Item item in bundles[3].Items)
             {
-                cklNightFishing.Items.Add(item.Name);
+                cklNightFishing.Items.Add(item);
             }
 
-            foreach(Item item in bundles[4].Items)
+            foreach (Item item in bundles[4].Items)
             {
-                cklCrabPot.Items.Add(item.Name);
+                cklCrabPot.Items.Add(item);
             }
 
-            foreach(Item item in bundles[5].Items)
+            foreach (Item item in bundles[5].Items)
             {
-                cklSpecialtyFish.Items.Add(item.Name);
+                cklSpecialtyFish.Items.Add(item);
+            }
+        }
+
+        private void cklCrabPot_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklCrabPot.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklLakeFish_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklLakeFish.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklNightFishing_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklNightFishing.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklOceanFish_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklOceanFish.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklRiverFish_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklRiverFish.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklSpecialtyFish_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklSpecialtyFish.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
             }
         }
     }

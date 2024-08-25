@@ -63,5 +63,18 @@ namespace StardewGroupProject
             // Save changes to commit deletions
             ObjectTransferHelper.Context.SaveChanges();
         }
+
+        /// <summary>
+        /// This method updates the item's Complete field and 
+        /// set in the database.
+        /// </summary>
+        /// <param name="completionStatus">The value to set the item completion status to.</param>
+        /// <param name="item">The Item to be updated.</param>
+        public static void UpdateItemComplete(bool completionStatus, Item item)
+        {
+            item.Complete = completionStatus;
+            ObjectTransferHelper.Context.Items.Update(item);
+            ObjectTransferHelper.Context.SaveChanges();
+        }
     }
 }

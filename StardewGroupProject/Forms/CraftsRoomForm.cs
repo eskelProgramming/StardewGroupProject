@@ -1,4 +1,7 @@
-﻿using StardewGroupProject.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using StardewGroupProject.Data;
+using StardewGroupProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,32 +33,92 @@ namespace StardewGroupProject
 
             foreach (var item in bundles[0].Items)
             {
-                cklSpringForaging.Items.Add(item.Name);
+                cklSpringForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[1].Items)
             {
-                cklSummerForaging.Items.Add(item.Name);
+                cklSummerForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[2].Items)
             {
-                cklFallForaging.Items.Add(item.Name);
+                cklFallForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[3].Items)
             {
-                cklWinterForaging.Items.Add(item.Name);
+                cklWinterForaging.Items.Add(item);
             }
 
             foreach (var item in bundles[4].Items)
             {
-                cklConstruction.Items.Add(item.Name);
+                cklConstruction.Items.Add(item);
             }
 
             foreach (var item in bundles[5].Items)
             {
-                cklExoticForaging.Items.Add(item.Name);
+                cklExoticForaging.Items.Add(item);
+            }
+        }
+
+        private void cklSpringForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklSpringForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklSummerForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklSummerForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklFallForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklFallForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklWinterForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklWinterForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklConstruction_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklConstruction.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
+            }
+        }
+
+        private void cklExoticForaging_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = (Item)cklExoticForaging.Items[e.Index];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(e.NewValue == CheckState.Checked, item);
             }
         }
     }
