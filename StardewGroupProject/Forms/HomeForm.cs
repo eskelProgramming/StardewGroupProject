@@ -25,10 +25,17 @@ namespace StardewGroupProject
 
         private void btnViewCommunityCenter_Click(object sender, EventArgs e)
         {
-            BundlesForm bundles = new BundlesForm();
-            this.Hide();
-            bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
-            bundles.ShowDialog();
+            if (cmbFarmNames.SelectedIndex == -1)
+            {
+                MessageBox.Show("Must select a Farm, or add a new Farm!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                BundlesForm bundles = new BundlesForm();
+                this.Hide();
+                bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
+                bundles.ShowDialog();
+            }
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
