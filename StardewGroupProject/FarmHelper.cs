@@ -17,10 +17,10 @@ namespace StardewGroupProject
 
 			cmbFarmNames.Items.Clear();
 
-			var data = ObjectTransferHelper.Context.Farms.ToList(); // Puts all the farms from the database into a list
+			var data = ObjectTransferHelper.Context.Farms.Include(farm => farm.Rooms).ThenInclude(room => room.Bundles).ThenInclude(bundle => bundle.Items).ToList(); // Puts all the farms from the database into a list
 
 			cmbFarmNames.DataSource = data; // Re-binds the ComboBox's datasource to the list of items
-			cmbFarmNames.DisplayMember = "Name"; // Displays the Name property from the data
+			cmbFarmNames.DisplayMember = nameof(Farm.Name); // Displays the Name property from the data
 		}
 
 		public static void DeleteFarm(Models.Farm farm)

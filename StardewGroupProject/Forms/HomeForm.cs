@@ -73,17 +73,10 @@ namespace StardewGroupProject
             Farm? currFarm = cmbFarmNames.SelectedItem as Farm;
             if (currFarm != null)
             {
-                ObjectTransferHelper.CurrentFarm = ObjectTransferHelper.Context.Farms.FirstOrDefault(f => f.FarmId == currFarm.FarmId);
-
-                if (ObjectTransferHelper.CurrentFarm != null)
-                {
-                    ObjectTransferHelper.CurrentFarm.Rooms = ObjectTransferHelper.Context.Rooms
-                        .Include(r => r.Bundles)
-                        .ThenInclude(b => b.Items)
-                        .ToList();
-
-                    ObjectTransferHelper.CurrentFarm.Rooms.ForEach(r => r.Bundles.ForEach(b => b.Items.ForEach(i => i = ObjectTransferHelper.Context.Items.FirstOrDefault(it => it.ItemId == i.ItemId))));
-                }
+                ObjectTransferHelper.CurrentFarm = ObjectTransferHelper.Context.Farms.Include(farm => farm.Rooms)
+                                                                                    .ThenInclude(room => room.Bundles)
+                                                                                    .ThenInclude(bundle => bundle.Items)
+                                                                                    .FirstOrDefault(f => f.FarmId == currFarm.FarmId);
             }
         }
     }
