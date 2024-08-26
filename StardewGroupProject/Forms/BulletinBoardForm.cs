@@ -21,6 +21,35 @@ namespace StardewGroupProject
         private void BulletinBoardForm_Load(object sender, EventArgs e)
         {
             LoadBundles();
+            UpdateCheckboxes();
+        }
+
+        private void UpdateCheckboxes()
+        {
+            for (int i = 0; i < cklChefs.Items.Count; i++)
+            {
+                cklChefs.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklChefs.Items[i]));
+            }
+
+            for (int i = 0; i < cklDye.Items.Count; i++)
+            {
+                cklDye.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklDye.Items[i]));
+            }
+
+            for (int i = 0; i < cklFieldResearch.Items.Count; i++)
+            {
+                cklFieldResearch.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklFieldResearch.Items[i]));
+            }
+
+            for (int i = 0; i < cklFodder.Items.Count; i++)
+            {
+                cklFodder.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklFodder.Items[i]));
+            }
+
+            for (int i = 0; i < cklEnchanters.Items.Count; i++)
+            {
+                cklEnchanters.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklEnchanters.Items[i]));
+            }
         }
 
         private void LoadBundles()

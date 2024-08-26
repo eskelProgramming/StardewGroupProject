@@ -76,5 +76,22 @@ namespace StardewGroupProject
             ObjectTransferHelper.Context.Items.Update(item);
             ObjectTransferHelper.Context.SaveChanges();
         }
+
+        /// <summary>
+        /// This method checks if an item is complete or not.
+        /// </summary>
+        /// <param name="item">The selected item from the bundle</param>
+        /// <returns>True if completed. False if not</returns>
+        public static bool IsItemComplete(Item item)
+        {
+            if (item.Complete == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

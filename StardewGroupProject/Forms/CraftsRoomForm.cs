@@ -24,6 +24,40 @@ namespace StardewGroupProject
         private void CraftsRoomForm_Load(object sender, EventArgs e)
         {
             LoadBundles();
+            UpdateCheckboxes();
+        }
+
+        private void UpdateCheckboxes()
+        {
+            for (int i = 0; i < cklSpringForaging.Items.Count; i++)
+            {
+                cklSpringForaging.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklSpringForaging.Items[i]));
+            }
+
+            for (int i = 0; i < cklSummerForaging.Items.Count; i++)
+            {
+                cklSummerForaging.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklSummerForaging.Items[i]));
+            }
+
+            for (int i = 0; i < cklFallForaging.Items.Count; i++)
+            {
+                cklFallForaging.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklFallForaging.Items[i]));
+            }
+
+            for (int i = 0; i < cklWinterForaging.Items.Count; i++)
+            {
+                cklWinterForaging.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklWinterForaging.Items[i]));
+            }
+
+            for (int i = 0; i < cklConstruction.Items.Count; i++)
+            {
+                cklConstruction.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklConstruction.Items[i]));
+            }
+
+            for (int i = 0; i < cklExoticForaging.Items.Count; i++)
+            {
+                cklExoticForaging.SetItemChecked(i, FarmHelper.IsItemComplete((Item)cklExoticForaging.Items[i]));
+            }
         }
 
         private void LoadBundles()
