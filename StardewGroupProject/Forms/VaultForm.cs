@@ -35,5 +35,15 @@ namespace StardewGroupProject
                 FarmHelper.UpdateItemComplete(chkVault5000.Checked, item);
             }
         }
+
+        private void chkVault10000_CheckedChanged(object sender, EventArgs e)
+        {
+            // Get the item that was clicked
+            Item item = ObjectTransferHelper.CurrentFarm.Rooms[4].Bundles[2].Items[0];
+            if (item != null)
+            {
+                FarmHelper.UpdateItemComplete(chkVault10000.Checked, item);
+            }
+        }
 	}
 }
