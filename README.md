@@ -3,7 +3,7 @@
 ![Stardew Valler Community Center Tracker Home Page](https://github.com/user-attachments/assets/d75087b7-4223-4e64-aa55-c946832fcfc1)
 
 ## Description
-This was a class group project to demonstrate understanding of .NET and CRUD functionality. This app is a WindowsForms app that uses C# and code first migrations along side EF Core. This app allows a user to create a Farm. In the app, you will be able to select a Farm and keep track of each Iitem required to finish a [Community Center Bundle](https://stardewvalleywiki.com/Bundles). ![Screenshot 2024-08-27 101216]
+This was a class group project to demonstrate understanding of .NET and CRUD functionality. This app is a WindowsForms app that uses C# and code first migrations along side EF Core. This app allows a user to create a Farm. In the app, you will be able to select a Farm and keep track of each Iitem required to finish a [Community Center Bundle](https://stardewvalleywiki.com/Bundles). 
 
 ![Items being tracked in the Bundles](https://github.com/user-attachments/assets/c346fbdb-829c-427d-8a4a-a58545196056)
 
