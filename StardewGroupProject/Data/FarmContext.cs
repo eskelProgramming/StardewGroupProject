@@ -21,21 +21,21 @@ namespace StardewGroupProject.Data
                 .Entity<Farm>()
                 .HasMany(f => f.Rooms)
                 .WithOne()
-                .OnDelete(DeleteBehavior.ClientCascade);
+                .OnDelete(DeleteBehavior.Cascade);
 
             // Room has many Bundles, when a Room is deleted, Bundles should also be deleted.
             modelBuilder
                 .Entity<Room>()
                 .HasMany(r => r.Bundles)
                 .WithOne()
-                .OnDelete(DeleteBehavior.ClientCascade);
+                .OnDelete(DeleteBehavior.Cascade);
 
             // Bundle has many Items, when a Bundle is deleted, Items should also be deleted.
             modelBuilder
                 .Entity<Bundle>()
                 .HasMany(b => b.Items)
                 .WithOne()
-                .OnDelete(DeleteBehavior.ClientCascade);
+                .OnDelete(DeleteBehavior.Cascade);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
