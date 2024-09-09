@@ -1,14 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using StardewGroupProject.Data;
 using StardewGroupProject.Models;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace StardewGroupProject
 {
     public partial class HomeForm : Form
     {
         private Farm farm;
-        
+
         public HomeForm()
         {
             InitializeComponent();
@@ -85,6 +87,194 @@ namespace StardewGroupProject
                                                                                     .ThenInclude(bundle => bundle.Items)
                                                                                     .FirstOrDefault(f => f.FarmId == currFarm.FarmId);
             }
+        }
+
+        private void btnViewCommunityCenter_Paint(object sender, PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+
+            if (btn != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius - 1, btn.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the button's region to the rounded rectangle
+                btn.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void btnDeleteFarm_Paint(object sender, PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+
+            if (btn != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius - 1, btn.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the button's region to the rounded rectangle
+                btn.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void btnAddNewFarm_Paint(object sender, PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+
+            if (btn != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius - 1, btn.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the button's region to the rounded rectangle
+                btn.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void label1_Paint(object sender, PaintEventArgs e)
+        {
+            Label lbl = sender as Label;
+            if (lbl != null)
+            {
+                // Define wood brown color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10; // Adjust the radius for more or less rounding
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(lbl.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(lbl.Width - radius - 1, lbl.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, lbl.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the label's region to the rounded rectangle
+                lbl.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 4);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void label2_Paint(object sender, PaintEventArgs e)
+        {
+            Label lbl = sender as Label;
+
+            if (lbl != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(lbl.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(lbl.Width - radius - 1, lbl.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, lbl.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the label's region to the rounded rectangle
+                lbl.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 4);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void cmbFarmNames_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ComboBox
+            e.DrawBackground();
+
+            Color woodBrown = Color.FromArgb(226, 122, 62);
+
+            // Draw the border
+            using (Pen borderPen = new Pen(woodBrown, 5))
+            {
+                e.Graphics.DrawRectangle(borderPen, e.Bounds);
+            }
+
+            // Draw the text
+            if (e.Index >= 0)
+            {
+                string farmName = ((Farm)cmbFarmNames.Items[e.Index]).Name;
+                e.Graphics.DrawString(farmName, e.Font, Brushes.Black, e.Bounds);
+            }
+
+            // Draw the focus rectangle
+            e.DrawFocusRectangle();
+        }
+
+        private void btnAddNewFarm_MouseEnter(object sender, EventArgs e)
+        {
+            btnAddNewFarm.BackColor = Color.FromArgb(214, 180, 116);
+        }
+
+        private void btnAddNewFarm_MouseLeave(object sender, EventArgs e)
+        {
+            btnAddNewFarm.BackColor = Color.FromArgb(255, 215, 137);
+        }
+
+        private void btnViewCommunityCenter_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewCommunityCenter.BackColor = Color.FromArgb(214, 180, 116);
+        }
+
+        private void btnViewCommunityCenter_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewCommunityCenter.BackColor = Color.FromArgb(255, 215, 137);
+        }
+
+        private void btnDeleteFarm_MouseEnter(object sender, EventArgs e)
+        {
+            btnDeleteFarm.BackColor = Color.FromArgb(214, 180, 116);
+        }
+
+        private void btnDeleteFarm_MouseLeave(object sender, EventArgs e)
+        {
+            btnDeleteFarm.BackColor = Color.FromArgb(255, 215, 137);
         }
     }
 }
