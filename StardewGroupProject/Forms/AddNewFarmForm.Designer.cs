@@ -20,79 +20,110 @@
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			txtNewFarmName = new TextBox();
-			btnNewFarmCreate = new Button();
-			label1 = new Label();
-			btnNewFarmCancel = new Button();
-			SuspendLayout();
-			// 
-			// txtNewFarmName
-			// 
-			txtNewFarmName.Location = new Point(186, 26);
-			txtNewFarmName.Name = "txtNewFarmName";
-			txtNewFarmName.Size = new Size(100, 23);
-			txtNewFarmName.TabIndex = 0;
-			// 
-			// btnNewFarmCreate
-			// 
-			btnNewFarmCreate.Font = new Font("Sitka Subheading", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-			btnNewFarmCreate.Location = new Point(59, 94);
-			btnNewFarmCreate.Name = "btnNewFarmCreate";
-			btnNewFarmCreate.Size = new Size(75, 26);
-			btnNewFarmCreate.TabIndex = 1;
-			btnNewFarmCreate.Text = "Create";
-			btnNewFarmCreate.UseVisualStyleBackColor = true;
-			btnNewFarmCreate.Click += btnNewFarmCreate_Click;
-			// 
-			// label1
-			// 
-			label1.AutoSize = true;
-			label1.Font = new Font("Sitka Subheading", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-			label1.Location = new Point(28, 29);
-			label1.Name = "label1";
-			label1.Size = new Size(158, 18);
-			label1.TabIndex = 2;
-			label1.Text = "Enter a name for your Farm:";
-			// 
-			// btnNewFarmCancel
-			// 
-			btnNewFarmCancel.Font = new Font("Sitka Subheading", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-			btnNewFarmCancel.Location = new Point(186, 94);
-			btnNewFarmCancel.Name = "btnNewFarmCancel";
-			btnNewFarmCancel.Size = new Size(74, 26);
-			btnNewFarmCancel.TabIndex = 3;
-			btnNewFarmCancel.Text = "Cancel";
-			btnNewFarmCancel.UseVisualStyleBackColor = true;
-			btnNewFarmCancel.Click += btnNewFarmCancel_Click;
-			// 
-			// AddNewFarmForm
-			// 
-			AutoScaleDimensions = new SizeF(7F, 15F);
-			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(319, 170);
-			Controls.Add(btnNewFarmCancel);
-			Controls.Add(label1);
-			Controls.Add(btnNewFarmCreate);
-			Controls.Add(txtNewFarmName);
-			Name = "AddNewFarmForm";
-			Text = "Add a new Farm";
-			ResumeLayout(false);
-			PerformLayout();
-		}
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewFarmForm));
+            txtNewFarmName = new TextBox();
+            btnNewFarmCreate = new Button();
+            label1 = new Label();
+            btnNewFarmCancel = new Button();
+            groupBox1 = new GroupBox();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // txtNewFarmName
+            // 
+            txtNewFarmName.BackColor = Color.FromArgb(255, 215, 137);
+            txtNewFarmName.BorderStyle = BorderStyle.FixedSingle;
+            txtNewFarmName.Font = new Font("Reem Kufi", 10F);
+            txtNewFarmName.Location = new Point(214, 6);
+            txtNewFarmName.Name = "txtNewFarmName";
+            txtNewFarmName.Size = new Size(128, 33);
+            txtNewFarmName.TabIndex = 0;
+            // 
+            // btnNewFarmCreate
+            // 
+            btnNewFarmCreate.BackColor = Color.FromArgb(255, 215, 137);
+            btnNewFarmCreate.Font = new Font("Reem Kufi", 15F);
+            btnNewFarmCreate.Location = new Point(127, 90);
+            btnNewFarmCreate.Name = "btnNewFarmCreate";
+            btnNewFarmCreate.Size = new Size(118, 61);
+            btnNewFarmCreate.TabIndex = 1;
+            btnNewFarmCreate.Text = "Create";
+            btnNewFarmCreate.UseVisualStyleBackColor = false;
+            btnNewFarmCreate.Click += btnNewFarmCreate_Click;
+            btnNewFarmCreate.Paint += btnNewFarmCreate_Paint;
+            btnNewFarmCreate.MouseEnter += btnNewFarmCreate_MouseEnter;
+            btnNewFarmCreate.MouseLeave += btnNewFarmCreate_MouseLeave;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(255, 215, 137);
+            label1.Font = new Font("Reem Kufi", 12F);
+            label1.Location = new Point(6, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(202, 30);
+            label1.TabIndex = 2;
+            label1.Text = "Enter a name for your Farm:";
+            // 
+            // btnNewFarmCancel
+            // 
+            btnNewFarmCancel.BackColor = Color.FromArgb(255, 215, 137);
+            btnNewFarmCancel.Font = new Font("Reem Kufi", 15F);
+            btnNewFarmCancel.Location = new Point(282, 90);
+            btnNewFarmCancel.Name = "btnNewFarmCancel";
+            btnNewFarmCancel.Size = new Size(118, 61);
+            btnNewFarmCancel.TabIndex = 3;
+            btnNewFarmCancel.Text = "Cancel";
+            btnNewFarmCancel.UseVisualStyleBackColor = false;
+            btnNewFarmCancel.Click += btnNewFarmCancel_Click;
+            btnNewFarmCancel.Paint += btnNewFarmCancel_Paint;
+            btnNewFarmCancel.MouseEnter += btnNewFarmCancel_MouseEnter;
+            btnNewFarmCancel.MouseLeave += btnNewFarmCancel_MouseLeave;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.FromArgb(255, 215, 137);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(txtNewFarmName);
+            groupBox1.Location = new Point(81, 38);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(364, 46);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
+            groupBox1.Paint += groupBox1_Paint;
+            // 
+            // AddNewFarmForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(525, 176);
+            Controls.Add(groupBox1);
+            Controls.Add(btnNewFarmCancel);
+            Controls.Add(btnNewFarmCreate);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Name = "AddNewFarmForm";
+            Text = "Add a new Farm";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
+        }
 
-		#endregion
+        #endregion
 
-		private TextBox txtNewFarmName;
+        private TextBox txtNewFarmName;
 		private Button btnNewFarmCreate;
 		private Label label1;
 		private Button btnNewFarmCancel;
-	}
+        private GroupBox groupBox1;
+    }
 }
