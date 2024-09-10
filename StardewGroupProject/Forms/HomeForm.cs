@@ -89,6 +89,10 @@ namespace StardewGroupProject
             }
         }
 
+
+
+        // Below are the custom paint methods for the buttons and labels
+
         private void btnViewCommunityCenter_Paint(object sender, PaintEventArgs e)
         {
             System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
@@ -170,7 +174,7 @@ namespace StardewGroupProject
             }
         }
 
-        private void label1_Paint(object sender, PaintEventArgs e)
+        private void lblChooseFarm_Paint(object sender, PaintEventArgs e)
         {
             Label lbl = sender as Label;
             if (lbl != null)
@@ -196,7 +200,7 @@ namespace StardewGroupProject
             }
         }
 
-        private void label2_Paint(object sender, PaintEventArgs e)
+        private void lblWelcomeMessage_Paint(object sender, PaintEventArgs e)
         {
             Label lbl = sender as Label;
 

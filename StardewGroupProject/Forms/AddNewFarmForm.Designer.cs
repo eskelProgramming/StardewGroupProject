@@ -33,8 +33,8 @@
             btnNewFarmCreate = new Button();
             label1 = new Label();
             btnNewFarmCancel = new Button();
-            groupBox1 = new GroupBox();
-            groupBox1.SuspendLayout();
+            grpAddNewFarm = new GroupBox();
+            grpAddNewFarm.SuspendLayout();
             SuspendLayout();
             // 
             // txtNewFarmName
@@ -88,17 +88,17 @@
             btnNewFarmCancel.MouseEnter += btnNewFarmCancel_MouseEnter;
             btnNewFarmCancel.MouseLeave += btnNewFarmCancel_MouseLeave;
             // 
-            // groupBox1
+            // grpAddNewFarm
             // 
-            groupBox1.BackColor = Color.FromArgb(255, 215, 137);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(txtNewFarmName);
-            groupBox1.Location = new Point(81, 38);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(364, 46);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Paint += groupBox1_Paint;
+            grpAddNewFarm.BackColor = Color.FromArgb(255, 215, 137);
+            grpAddNewFarm.Controls.Add(label1);
+            grpAddNewFarm.Controls.Add(txtNewFarmName);
+            grpAddNewFarm.Location = new Point(81, 38);
+            grpAddNewFarm.Name = "grpAddNewFarm";
+            grpAddNewFarm.Size = new Size(364, 46);
+            grpAddNewFarm.TabIndex = 4;
+            grpAddNewFarm.TabStop = false;
+            grpAddNewFarm.Paint += grpAddNewFarm_Paint;
             // 
             // AddNewFarmForm
             // 
@@ -107,14 +107,14 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(525, 176);
-            Controls.Add(groupBox1);
+            Controls.Add(grpAddNewFarm);
             Controls.Add(btnNewFarmCancel);
             Controls.Add(btnNewFarmCreate);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "AddNewFarmForm";
             Text = "Add a new Farm";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            grpAddNewFarm.ResumeLayout(false);
+            grpAddNewFarm.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -124,6 +124,6 @@
 		private Button btnNewFarmCreate;
 		private Label label1;
 		private Button btnNewFarmCancel;
-        private GroupBox groupBox1;
+        private GroupBox grpAddNewFarm;
     }
 }

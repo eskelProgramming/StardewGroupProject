@@ -33,8 +33,8 @@
             btnDeleteFarm = new Button();
             btnViewCommunityCenter = new Button();
             cmbFarmNames = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
+            lblChooseFarm = new Label();
+            lblWelcomeMessage = new Label();
             SuspendLayout();
             // 
             // btnAddNewFarm
@@ -96,29 +96,29 @@
             cmbFarmNames.DrawItem += cmbFarmNames_DrawItem;
             cmbFarmNames.SelectedIndexChanged += cmbFarmNames_SelectedIndexChanged;
             // 
-            // label1
+            // lblChooseFarm
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(255, 215, 137);
-            label1.Font = new Font("Reem Kufi", 12F);
-            label1.Location = new Point(149, 118);
-            label1.Name = "label1";
-            label1.Size = new Size(118, 30);
-            label1.TabIndex = 4;
-            label1.Text = "Choose a Farm:";
-            label1.Paint += label1_Paint;
+            lblChooseFarm.AutoSize = true;
+            lblChooseFarm.BackColor = Color.FromArgb(255, 215, 137);
+            lblChooseFarm.Font = new Font("Reem Kufi", 12F);
+            lblChooseFarm.Location = new Point(149, 118);
+            lblChooseFarm.Name = "lblChooseFarm";
+            lblChooseFarm.Size = new Size(118, 30);
+            lblChooseFarm.TabIndex = 4;
+            lblChooseFarm.Text = "Choose a Farm:";
+            lblChooseFarm.Paint += lblChooseFarm_Paint;
             // 
-            // label2
+            // lblWelcomeMessage
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(255, 215, 137);
-            label2.Font = new Font("Reem Kufi", 15F);
-            label2.Location = new Point(184, 22);
-            label2.Name = "label2";
-            label2.Size = new Size(327, 38);
-            label2.TabIndex = 5;
-            label2.Text = "Welcome to the Community Center!";
-            label2.Paint += label2_Paint;
+            lblWelcomeMessage.AutoSize = true;
+            lblWelcomeMessage.BackColor = Color.FromArgb(255, 215, 137);
+            lblWelcomeMessage.Font = new Font("Reem Kufi", 15F);
+            lblWelcomeMessage.Location = new Point(184, 22);
+            lblWelcomeMessage.Name = "lblWelcomeMessage";
+            lblWelcomeMessage.Size = new Size(327, 38);
+            lblWelcomeMessage.TabIndex = 5;
+            lblWelcomeMessage.Text = "Welcome to the Community Center!";
+            lblWelcomeMessage.Paint += lblWelcomeMessage_Paint;
             // 
             // HomeForm
             // 
@@ -128,8 +128,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(691, 426);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblWelcomeMessage);
+            Controls.Add(lblChooseFarm);
             Controls.Add(cmbFarmNames);
             Controls.Add(btnViewCommunityCenter);
             Controls.Add(btnDeleteFarm);
@@ -149,7 +149,7 @@
 		private Button btnDeleteFarm;
 		private Button btnViewCommunityCenter;
 		private ComboBox cmbFarmNames;
-		private Label label1;
-		private Label label2;
+		private Label lblChooseFarm;
+		private Label lblWelcomeMessage;
 	}
 }

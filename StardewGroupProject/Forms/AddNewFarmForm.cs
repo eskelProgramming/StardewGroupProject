@@ -358,7 +358,7 @@ namespace StardewGroupProject
             }
         }
 
-        private void groupBox1_Paint(object sender, PaintEventArgs e)
+        private void grpAddNewFarm_Paint(object sender, PaintEventArgs e)
         {
             GroupBox box = sender as GroupBox;
 
