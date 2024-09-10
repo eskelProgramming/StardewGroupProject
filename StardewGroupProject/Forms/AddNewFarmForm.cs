@@ -299,7 +299,7 @@ namespace StardewGroupProject
                 CustomMessageBoxForm messageBox = new();
 
                 messageBox.InvalidFarmNameMessage();
-                messageBox.Show();
+                messageBox.ShowDialog();
 
                 txtNewFarmName.Clear();
             }

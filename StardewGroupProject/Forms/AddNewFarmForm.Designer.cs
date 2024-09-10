@@ -113,6 +113,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddNewFarmForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Add a new Farm";
             grpAddNewFarm.ResumeLayout(false);
             grpAddNewFarm.PerformLayout();

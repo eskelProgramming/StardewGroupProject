@@ -137,6 +137,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "HomeForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             Load += HomeForm_Load;
             ResumeLayout(false);

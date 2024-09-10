@@ -123,6 +123,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CustomMessageBoxForm";
+            StartPosition = FormStartPosition.CenterScreen;
             grpCustomMessageBox.ResumeLayout(false);
             grpCustomMessageBox.PerformLayout();
             ResumeLayout(false);
