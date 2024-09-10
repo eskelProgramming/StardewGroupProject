@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StardewGroupProject.Data;
 using System.Drawing.Drawing2D;
+using StardewGroupProject.Forms;
 
 namespace StardewGroupProject
 {
@@ -286,13 +287,19 @@ namespace StardewGroupProject
                 ObjectTransferHelper.Context.Farms.Add(farm); // Adds the new Farm object to the Database using Entity Framework
                 ObjectTransferHelper.Context.SaveChanges(); // Saves those changes
 
-                MessageBox.Show("Farm successfully added!");
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.ValidFarmNameMessage();
+                messageBox.ShowDialog();
+
                 Close();
             }
             else
             {
-                MessageBox.Show("Invalid Farm Name. Must not be empty, and be between 1-12 characters.", "Warning!",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.InvalidFarmNameMessage();
+                messageBox.Show();
 
                 txtNewFarmName.Clear();
             }

@@ -111,6 +111,7 @@
             Controls.Add(btnNewFarmCancel);
             Controls.Add(btnNewFarmCreate);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddNewFarmForm";
             Text = "Add a new Farm";
             grpAddNewFarm.ResumeLayout(false);
