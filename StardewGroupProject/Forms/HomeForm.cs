@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StardewGroupProject.Data;
+using StardewGroupProject.Forms;
 using StardewGroupProject.Models;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -29,7 +30,11 @@ namespace StardewGroupProject
         {
             if (cmbFarmNames.SelectedIndex == -1)
             {
-                MessageBox.Show("Must select a Farm, or add a new Farm!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.NoFarmSelectedMessage();
+
+                messageBox.ShowDialog();
             }
             else
             {
@@ -50,16 +55,29 @@ namespace StardewGroupProject
         {
             if (cmbFarmNames.SelectedIndex == -1)
             {
-                MessageBox.Show("Must select a Farm, or add a new Farm!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.NoFarmSelectedMessage();
+
+                messageBox.ShowDialog();
             }
             else
             {
-                DialogResult result = MessageBox.Show($"Are you sure you want to delete {cmbFarmNames.Text}?", "Confirmation", MessageBoxButtons.YesNo);
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.DeleteFarmConfirmationMessage();
+
+                DialogResult result = messageBox.ShowDialog();
+
                 if (result == DialogResult.Yes)
                 {
                     FarmHelper.DeleteFarm(ObjectTransferHelper.CurrentFarm);
 
-                    MessageBox.Show($"{cmbFarmNames.Text} successfully deleted!", "Success");
+                    CustomMessageBoxForm messageBoxSuccess = new();
+
+                    messageBoxSuccess.DeleteFarmSuccessMessage();
+
+                    messageBoxSuccess.ShowDialog();
                 }
 
             }

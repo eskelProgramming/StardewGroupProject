@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StardewGroupProject.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,38 @@ namespace StardewGroupProject.Forms
             btnUnderstood.Visible = true;
         }
 
+        public void NoFarmSelectedMessage()
+        {
+            grpCustomMessageBox.Text = "No Farm Selected!";
+
+            txtCustomMessageBox.Text = "Please select, or create a farm to continue.";
+
+            btnYes.Visible = false;
+            btnNo.Visible = false;
+            btnUnderstood.Visible = true;
+        }
+
+        public void DeleteFarmConfirmationMessage()
+        {
+            grpCustomMessageBox.Text = "Delete Farm?";
+
+            txtCustomMessageBox.Text = $"Are you sure you want to delete {ObjectTransferHelper.CurrentFarm.Name} ?";
+
+            btnYes.Visible = true;
+            btnNo.Visible = true;
+            btnUnderstood.Visible = false;
+        }
+
+        public void DeleteFarmSuccessMessage()
+        {
+            grpCustomMessageBox.Text = "Success!";
+
+            txtCustomMessageBox.Text = $"{ObjectTransferHelper.CurrentFarm.Name} has been deleted.";
+
+            btnYes.Visible = false;
+            btnNo.Visible = false;
+            btnUnderstood.Visible = true;
+        }
 
 
         private void grpCustomMessageBox_Paint(object sender, PaintEventArgs e)
@@ -185,11 +218,11 @@ namespace StardewGroupProject.Forms
 
         private void btnNo_Click(object sender, EventArgs e)
         {
-
+            DialogResult = DialogResult.No;
         }
         private void btnYes_Click(object sender, EventArgs e)
         {
-
+            DialogResult = DialogResult.Yes;
         }
         private void btnUnderstood_Click(object sender, EventArgs e)
         {

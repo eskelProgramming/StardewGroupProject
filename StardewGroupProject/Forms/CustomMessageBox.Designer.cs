@@ -43,7 +43,7 @@
             grpCustomMessageBox.Controls.Add(btnNo);
             grpCustomMessageBox.Controls.Add(txtCustomMessageBox);
             grpCustomMessageBox.Controls.Add(btnYes);
-            grpCustomMessageBox.Font = new Font("Reem Kufi", 10F);
+            grpCustomMessageBox.Font = new Font("Reem Kufi", 13F);
             grpCustomMessageBox.Location = new Point(0, 0);
             grpCustomMessageBox.Name = "grpCustomMessageBox";
             grpCustomMessageBox.Size = new Size(372, 141);
@@ -55,7 +55,7 @@
             // 
             btnUnderstood.BackColor = Color.FromArgb(255, 215, 137);
             btnUnderstood.Font = new Font("Reem Kufi", 13F);
-            btnUnderstood.Location = new Point(125, 74);
+            btnUnderstood.Location = new Point(125, 77);
             btnUnderstood.Name = "btnUnderstood";
             btnUnderstood.Size = new Size(120, 54);
             btnUnderstood.TabIndex = 4;
@@ -71,7 +71,7 @@
             // 
             btnNo.BackColor = Color.FromArgb(255, 215, 137);
             btnNo.Font = new Font("Reem Kufi", 15F);
-            btnNo.Location = new Point(214, 74);
+            btnNo.Location = new Point(214, 77);
             btnNo.Name = "btnNo";
             btnNo.Size = new Size(120, 54);
             btnNo.TabIndex = 3;
@@ -90,7 +90,7 @@
             txtCustomMessageBox.Enabled = false;
             txtCustomMessageBox.Font = new Font("Reem Kufi", 12F);
             txtCustomMessageBox.ForeColor = Color.Firebrick;
-            txtCustomMessageBox.Location = new Point(12, 30);
+            txtCustomMessageBox.Location = new Point(12, 33);
             txtCustomMessageBox.Name = "txtCustomMessageBox";
             txtCustomMessageBox.Size = new Size(348, 38);
             txtCustomMessageBox.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             btnYes.BackColor = Color.FromArgb(255, 215, 137);
             btnYes.Font = new Font("Reem Kufi", 15F);
-            btnYes.Location = new Point(41, 74);
+            btnYes.Location = new Point(41, 77);
             btnYes.Name = "btnYes";
             btnYes.Size = new Size(120, 54);
             btnYes.TabIndex = 1;
