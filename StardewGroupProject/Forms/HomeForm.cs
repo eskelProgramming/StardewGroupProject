@@ -38,10 +38,10 @@ namespace StardewGroupProject
             }
             else
             {
-                BundlesForm bundles = new BundlesForm();
+                RoomsForm rooms = new RoomsForm();
                 this.Hide();
-                bundles.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Bundles form is closed
-                bundles.ShowDialog();
+                rooms.FormClosed += (s, args) => this.Show(); // Shows the current form (Home) when the Rooms form is closed
+                rooms.ShowDialog();
             }
         }
 
