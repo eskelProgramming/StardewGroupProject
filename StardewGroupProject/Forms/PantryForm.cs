@@ -288,7 +288,7 @@ namespace StardewGroupProject
             }
         }
 
-        private void d_Paint(object sender, PaintEventArgs e)
+        private void lblFallCrops_Paint(object sender, PaintEventArgs e)
         {
             Label lbl = sender as Label;
 

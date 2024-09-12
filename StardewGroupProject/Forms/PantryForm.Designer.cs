@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantryForm));
-            d = new Label();
+            lblFallCrops = new Label();
             lblAnimal = new Label();
             lblSummerCrops = new Label();
             lblArtisan = new Label();
@@ -43,17 +43,17 @@
             lblSpringCrops = new Label();
             SuspendLayout();
             // 
-            // d
+            // lblFallCrops
             // 
-            d.AutoSize = true;
-            d.BackColor = Color.FromArgb(255, 224, 192);
-            d.Font = new Font("Reem Kufi", 12F);
-            d.Location = new Point(486, 207);
-            d.Name = "d";
-            d.Size = new Size(83, 30);
-            d.TabIndex = 23;
-            d.Text = "Fall Crops";
-            d.Paint += d_Paint;
+            lblFallCrops.AutoSize = true;
+            lblFallCrops.BackColor = Color.FromArgb(255, 224, 192);
+            lblFallCrops.Font = new Font("Reem Kufi", 12F);
+            lblFallCrops.Location = new Point(486, 207);
+            lblFallCrops.Name = "lblFallCrops";
+            lblFallCrops.Size = new Size(83, 30);
+            lblFallCrops.TabIndex = 23;
+            lblFallCrops.Text = "Fall Crops";
+            lblFallCrops.Paint += lblFallCrops_Paint;
             // 
             // lblAnimal
             // 
@@ -200,7 +200,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(763, 383);
-            Controls.Add(d);
+            Controls.Add(lblFallCrops);
             Controls.Add(lblAnimal);
             Controls.Add(lblSummerCrops);
             Controls.Add(lblArtisan);
@@ -224,7 +224,7 @@
 
         #endregion
 
-        private Label d;
+        private Label lblFallCrops;
 		private Label lblAnimal;
 		private Label lblSummerCrops;
 		private Label lblArtisan;
