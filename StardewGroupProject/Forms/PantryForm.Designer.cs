@@ -48,7 +48,7 @@
             lblFallCrops.AutoSize = true;
             lblFallCrops.BackColor = Color.FromArgb(255, 224, 192);
             lblFallCrops.Font = new Font("Reem Kufi", 12F);
-            lblFallCrops.Location = new Point(486, 207);
+            lblFallCrops.Location = new Point(491, 207);
             lblFallCrops.Name = "lblFallCrops";
             lblFallCrops.Size = new Size(83, 30);
             lblFallCrops.TabIndex = 23;
@@ -60,7 +60,7 @@
             lblAnimal.AutoSize = true;
             lblAnimal.BackColor = Color.FromArgb(255, 192, 192);
             lblAnimal.Font = new Font("Reem Kufi", 12F);
-            lblAnimal.Location = new Point(536, 64);
+            lblAnimal.Location = new Point(541, 50);
             lblAnimal.Name = "lblAnimal";
             lblAnimal.Size = new Size(63, 30);
             lblAnimal.TabIndex = 22;
@@ -96,7 +96,7 @@
             lblQualityCrops.AutoSize = true;
             lblQualityCrops.BackColor = Color.FromArgb(192, 255, 255);
             lblQualityCrops.Font = new Font("Reem Kufi", 12F);
-            lblQualityCrops.Location = new Point(114, 64);
+            lblQualityCrops.Location = new Point(114, 50);
             lblQualityCrops.Name = "lblQualityCrops";
             lblQualityCrops.Size = new Size(112, 30);
             lblQualityCrops.TabIndex = 19;
@@ -108,11 +108,11 @@
             cklFallCrops.BackColor = Color.FromArgb(255, 224, 192);
             cklFallCrops.BorderStyle = BorderStyle.FixedSingle;
             cklFallCrops.CheckOnClick = true;
-            cklFallCrops.Font = new Font("Sitka Banner", 12F);
+            cklFallCrops.Font = new Font("Reem Kufi", 10F);
             cklFallCrops.FormattingEnabled = true;
-            cklFallCrops.Location = new Point(466, 240);
+            cklFallCrops.Location = new Point(471, 240);
             cklFallCrops.Name = "cklFallCrops";
-            cklFallCrops.Size = new Size(120, 94);
+            cklFallCrops.Size = new Size(120, 114);
             cklFallCrops.TabIndex = 17;
             cklFallCrops.ItemCheck += cklFallCrops_ItemCheck;
             // 
@@ -121,11 +121,11 @@
             cklAnimal.BackColor = Color.FromArgb(255, 192, 192);
             cklAnimal.BorderStyle = BorderStyle.FixedSingle;
             cklAnimal.CheckOnClick = true;
-            cklAnimal.Font = new Font("Sitka Banner", 12F);
+            cklAnimal.Font = new Font("Reem Kufi", 10F);
             cklAnimal.FormattingEnabled = true;
-            cklAnimal.Location = new Point(486, 97);
+            cklAnimal.Location = new Point(487, 83);
             cklAnimal.Name = "cklAnimal";
-            cklAnimal.Size = new Size(170, 94);
+            cklAnimal.Size = new Size(170, 114);
             cklAnimal.TabIndex = 16;
             cklAnimal.ItemCheck += cklAnimal_ItemCheck;
             // 
@@ -134,11 +134,11 @@
             cklSummerCrops.BackColor = Color.FromArgb(255, 255, 192);
             cklSummerCrops.BorderStyle = BorderStyle.FixedSingle;
             cklSummerCrops.CheckOnClick = true;
-            cklSummerCrops.Font = new Font("Sitka Banner", 12F);
+            cklSummerCrops.Font = new Font("Reem Kufi", 10F);
             cklSummerCrops.FormattingEnabled = true;
             cklSummerCrops.Location = new Point(150, 240);
             cklSummerCrops.Name = "cklSummerCrops";
-            cklSummerCrops.Size = new Size(120, 94);
+            cklSummerCrops.Size = new Size(120, 114);
             cklSummerCrops.TabIndex = 15;
             cklSummerCrops.ItemCheck += cklSummerCrops_ItemCheck;
             // 
@@ -147,11 +147,11 @@
             cklArtisan.BackColor = Color.FromArgb(192, 192, 255);
             cklArtisan.BorderStyle = BorderStyle.FixedSingle;
             cklArtisan.CheckOnClick = true;
-            cklArtisan.Font = new Font("Sitka Banner", 12F);
+            cklArtisan.Font = new Font("Reem Kufi", 10F);
             cklArtisan.FormattingEnabled = true;
-            cklArtisan.Location = new Point(309, 227);
+            cklArtisan.Location = new Point(305, 227);
             cklArtisan.Name = "cklArtisan";
-            cklArtisan.Size = new Size(120, 94);
+            cklArtisan.Size = new Size(129, 114);
             cklArtisan.TabIndex = 14;
             cklArtisan.ItemCheck += cklArtisan_ItemCheck;
             // 
@@ -160,11 +160,11 @@
             cklQualityCrops.BackColor = Color.FromArgb(192, 255, 255);
             cklQualityCrops.BorderStyle = BorderStyle.FixedSingle;
             cklQualityCrops.CheckOnClick = true;
-            cklQualityCrops.Font = new Font("Sitka Banner", 12F);
+            cklQualityCrops.Font = new Font("Reem Kufi", 10F);
             cklQualityCrops.FormattingEnabled = true;
-            cklQualityCrops.Location = new Point(83, 97);
+            cklQualityCrops.Location = new Point(87, 83);
             cklQualityCrops.Name = "cklQualityCrops";
-            cklQualityCrops.Size = new Size(170, 94);
+            cklQualityCrops.Size = new Size(170, 114);
             cklQualityCrops.TabIndex = 13;
             cklQualityCrops.ItemCheck += cklQualityCrops_ItemCheck;
             // 
@@ -173,11 +173,11 @@
             cklSpringCrops.BackColor = Color.FromArgb(192, 255, 192);
             cklSpringCrops.BorderStyle = BorderStyle.FixedSingle;
             cklSpringCrops.CheckOnClick = true;
-            cklSpringCrops.Font = new Font("Sitka Banner", 12F);
+            cklSpringCrops.Font = new Font("Reem Kufi", 10F);
             cklSpringCrops.FormattingEnabled = true;
-            cklSpringCrops.Location = new Point(309, 83);
+            cklSpringCrops.Location = new Point(305, 50);
             cklSpringCrops.Name = "cklSpringCrops";
-            cklSpringCrops.Size = new Size(120, 94);
+            cklSpringCrops.Size = new Size(129, 114);
             cklSpringCrops.TabIndex = 12;
             cklSpringCrops.ItemCheck += cklSpringCrops_ItemCheck;
             // 
@@ -186,7 +186,7 @@
             lblSpringCrops.AutoSize = true;
             lblSpringCrops.BackColor = Color.FromArgb(192, 255, 192);
             lblSpringCrops.Font = new Font("Reem Kufi", 12F);
-            lblSpringCrops.Location = new Point(317, 50);
+            lblSpringCrops.Location = new Point(317, 17);
             lblSpringCrops.Name = "lblSpringCrops";
             lblSpringCrops.Size = new Size(106, 30);
             lblSpringCrops.TabIndex = 18;

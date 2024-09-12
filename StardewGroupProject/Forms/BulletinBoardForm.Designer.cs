@@ -46,7 +46,7 @@
             lblEnchanters.AutoSize = true;
             lblEnchanters.BackColor = Color.FromArgb(255, 192, 255);
             lblEnchanters.Font = new Font("Reem Kufi", 12F);
-            lblEnchanters.Location = new Point(460, 206);
+            lblEnchanters.Location = new Point(462, 212);
             lblEnchanters.Name = "lblEnchanters";
             lblEnchanters.Size = new Size(96, 30);
             lblEnchanters.TabIndex = 23;
@@ -58,7 +58,7 @@
             lblFodder.AutoSize = true;
             lblFodder.BackColor = Color.FromArgb(255, 255, 192);
             lblFodder.Font = new Font("Reem Kufi", 12F);
-            lblFodder.Location = new Point(568, 62);
+            lblFodder.Location = new Point(570, 56);
             lblFodder.Name = "lblFodder";
             lblFodder.Size = new Size(64, 30);
             lblFodder.TabIndex = 22;
@@ -70,7 +70,7 @@
             lblFieldResearch.AutoSize = true;
             lblFieldResearch.BackColor = Color.FromArgb(192, 192, 255);
             lblFieldResearch.Font = new Font("Reem Kufi", 12F);
-            lblFieldResearch.Location = new Point(159, 206);
+            lblFieldResearch.Location = new Point(161, 212);
             lblFieldResearch.Name = "lblFieldResearch";
             lblFieldResearch.Size = new Size(115, 30);
             lblFieldResearch.TabIndex = 21;
@@ -82,7 +82,7 @@
             lblDye.AutoSize = true;
             lblDye.BackColor = Color.FromArgb(192, 255, 255);
             lblDye.Font = new Font("Reem Kufi", 12F);
-            lblDye.Location = new Point(126, 62);
+            lblDye.Location = new Point(128, 56);
             lblDye.Name = "lblDye";
             lblDye.Size = new Size(41, 30);
             lblDye.TabIndex = 19;
@@ -94,7 +94,7 @@
             lblChefs.AutoSize = true;
             lblChefs.BackColor = Color.FromArgb(255, 192, 192);
             lblChefs.Font = new Font("Reem Kufi", 12F);
-            lblChefs.Location = new Point(343, 28);
+            lblChefs.Location = new Point(345, 22);
             lblChefs.Name = "lblChefs";
             lblChefs.Size = new Size(57, 30);
             lblChefs.TabIndex = 18;
@@ -106,11 +106,11 @@
             cklEnchanters.BackColor = Color.FromArgb(255, 192, 255);
             cklEnchanters.BorderStyle = BorderStyle.FixedSingle;
             cklEnchanters.CheckOnClick = true;
-            cklEnchanters.Font = new Font("Sitka Banner", 12F);
+            cklEnchanters.Font = new Font("Reem Kufi", 10F);
             cklEnchanters.FormattingEnabled = true;
-            cklEnchanters.Location = new Point(431, 239);
+            cklEnchanters.Location = new Point(433, 245);
             cklEnchanters.Name = "cklEnchanters";
-            cklEnchanters.Size = new Size(155, 94);
+            cklEnchanters.Size = new Size(155, 114);
             cklEnchanters.TabIndex = 17;
             cklEnchanters.ItemCheck += cklEnchanters_ItemCheck;
             // 
@@ -119,11 +119,11 @@
             cklFodder.BackColor = Color.FromArgb(255, 255, 192);
             cklFodder.BorderStyle = BorderStyle.FixedSingle;
             cklFodder.CheckOnClick = true;
-            cklFodder.Font = new Font("Sitka Banner", 12F);
+            cklFodder.Font = new Font("Reem Kufi", 10F);
             cklFodder.FormattingEnabled = true;
-            cklFodder.Location = new Point(520, 95);
+            cklFodder.Location = new Point(522, 89);
             cklFodder.Name = "cklFodder";
-            cklFodder.Size = new Size(155, 94);
+            cklFodder.Size = new Size(155, 114);
             cklFodder.TabIndex = 16;
             cklFodder.ItemCheck += cklFodder_ItemCheck;
             // 
@@ -132,11 +132,11 @@
             cklFieldResearch.BackColor = Color.FromArgb(192, 192, 255);
             cklFieldResearch.BorderStyle = BorderStyle.FixedSingle;
             cklFieldResearch.CheckOnClick = true;
-            cklFieldResearch.Font = new Font("Sitka Banner", 12F);
+            cklFieldResearch.Font = new Font("Reem Kufi", 10F);
             cklFieldResearch.FormattingEnabled = true;
-            cklFieldResearch.Location = new Point(141, 239);
+            cklFieldResearch.Location = new Point(143, 245);
             cklFieldResearch.Name = "cklFieldResearch";
-            cklFieldResearch.Size = new Size(155, 94);
+            cklFieldResearch.Size = new Size(155, 114);
             cklFieldResearch.TabIndex = 15;
             cklFieldResearch.ItemCheck += cklFieldResearch_ItemCheck;
             // 
@@ -145,11 +145,11 @@
             cklDye.BackColor = Color.FromArgb(192, 255, 255);
             cklDye.BorderStyle = BorderStyle.FixedSingle;
             cklDye.CheckOnClick = true;
-            cklDye.Font = new Font("Sitka Banner", 12F);
+            cklDye.Font = new Font("Reem Kufi", 10F);
             cklDye.FormattingEnabled = true;
-            cklDye.Location = new Point(71, 95);
+            cklDye.Location = new Point(73, 89);
             cklDye.Name = "cklDye";
-            cklDye.Size = new Size(155, 94);
+            cklDye.Size = new Size(155, 114);
             cklDye.TabIndex = 13;
             cklDye.ItemCheck += cklDye_ItemCheck;
             // 
@@ -158,11 +158,11 @@
             cklChefs.BackColor = Color.FromArgb(255, 192, 192);
             cklChefs.BorderStyle = BorderStyle.FixedSingle;
             cklChefs.CheckOnClick = true;
-            cklChefs.Font = new Font("Sitka Banner", 12F);
+            cklChefs.Font = new Font("Reem Kufi", 10F);
             cklChefs.FormattingEnabled = true;
-            cklChefs.Location = new Point(295, 61);
+            cklChefs.Location = new Point(297, 55);
             cklChefs.Name = "cklChefs";
-            cklChefs.Size = new Size(155, 94);
+            cklChefs.Size = new Size(155, 114);
             cklChefs.TabIndex = 12;
             cklChefs.ItemCheck += cklChefs_ItemCheck;
             // 

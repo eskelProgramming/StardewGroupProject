@@ -38,7 +38,7 @@
             lblMissingBundle.AutoSize = true;
             lblMissingBundle.BackColor = Color.FromArgb(192, 192, 255);
             lblMissingBundle.Font = new Font("Reem Kufi", 12F);
-            lblMissingBundle.Location = new Point(148, 19);
+            lblMissingBundle.Location = new Point(145, 20);
             lblMissingBundle.Name = "lblMissingBundle";
             lblMissingBundle.Size = new Size(121, 30);
             lblMissingBundle.TabIndex = 20;
@@ -50,11 +50,11 @@
             cklMissingBundle.BackColor = Color.FromArgb(192, 192, 255);
             cklMissingBundle.BorderStyle = BorderStyle.FixedSingle;
             cklMissingBundle.CheckOnClick = true;
-            cklMissingBundle.Font = new Font("Sitka Banner", 12F);
+            cklMissingBundle.Font = new Font("Reem Kufi", 10F);
             cklMissingBundle.FormattingEnabled = true;
-            cklMissingBundle.Location = new Point(148, 52);
+            cklMissingBundle.Location = new Point(145, 53);
             cklMissingBundle.Name = "cklMissingBundle";
-            cklMissingBundle.Size = new Size(120, 140);
+            cklMissingBundle.Size = new Size(120, 114);
             cklMissingBundle.TabIndex = 19;
             // 
             // AbandonedJojamartForm

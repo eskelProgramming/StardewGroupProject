@@ -42,7 +42,7 @@
             lblAdventurers.AutoSize = true;
             lblAdventurers.BackColor = Color.FromArgb(255, 192, 255);
             lblAdventurers.Font = new Font("Reem Kufi", 12F);
-            lblAdventurers.Location = new Point(463, 199);
+            lblAdventurers.Location = new Point(463, 190);
             lblAdventurers.Name = "lblAdventurers";
             lblAdventurers.Size = new Size(104, 30);
             lblAdventurers.TabIndex = 22;
@@ -54,7 +54,7 @@
             lblGeologists.AutoSize = true;
             lblGeologists.BackColor = Color.FromArgb(255, 192, 255);
             lblGeologists.Font = new Font("Reem Kufi", 12F);
-            lblGeologists.Location = new Point(179, 199);
+            lblGeologists.Location = new Point(179, 190);
             lblGeologists.Name = "lblGeologists";
             lblGeologists.Size = new Size(92, 30);
             lblGeologists.TabIndex = 20;
@@ -66,7 +66,7 @@
             lblBlacksmiths.AutoSize = true;
             lblBlacksmiths.BackColor = Color.FromArgb(255, 224, 192);
             lblBlacksmiths.Font = new Font("Reem Kufi", 12F);
-            lblBlacksmiths.Location = new Point(322, 37);
+            lblBlacksmiths.Location = new Point(322, 28);
             lblBlacksmiths.Name = "lblBlacksmiths";
             lblBlacksmiths.Size = new Size(100, 30);
             lblBlacksmiths.TabIndex = 18;
@@ -78,11 +78,11 @@
             cklAdventurers.BackColor = Color.FromArgb(255, 192, 255);
             cklAdventurers.BorderStyle = BorderStyle.FixedSingle;
             cklAdventurers.CheckOnClick = true;
-            cklAdventurers.Font = new Font("Sitka Banner", 12F);
+            cklAdventurers.Font = new Font("Reem Kufi", 10F);
             cklAdventurers.FormattingEnabled = true;
-            cklAdventurers.Location = new Point(456, 231);
+            cklAdventurers.Location = new Point(456, 222);
             cklAdventurers.Name = "cklAdventurers";
-            cklAdventurers.Size = new Size(120, 94);
+            cklAdventurers.Size = new Size(120, 114);
             cklAdventurers.TabIndex = 16;
             cklAdventurers.ItemCheck += cklAdventurers_ItemCheck;
             // 
@@ -91,11 +91,11 @@
             cklGeologists.BackColor = Color.FromArgb(255, 192, 255);
             cklGeologists.BorderStyle = BorderStyle.FixedSingle;
             cklGeologists.CheckOnClick = true;
-            cklGeologists.Font = new Font("Sitka Banner", 12F);
+            cklGeologists.Font = new Font("Reem Kufi", 10F);
             cklGeologists.FormattingEnabled = true;
-            cklGeologists.Location = new Point(165, 232);
+            cklGeologists.Location = new Point(165, 223);
             cklGeologists.Name = "cklGeologists";
-            cklGeologists.Size = new Size(120, 94);
+            cklGeologists.Size = new Size(120, 114);
             cklGeologists.TabIndex = 14;
             cklGeologists.ItemCheck += cklGeologists_ItemCheck;
             // 
@@ -104,11 +104,11 @@
             cklBlacksmiths.BackColor = Color.FromArgb(255, 224, 192);
             cklBlacksmiths.BorderStyle = BorderStyle.FixedSingle;
             cklBlacksmiths.CheckOnClick = true;
-            cklBlacksmiths.Font = new Font("Sitka Banner", 12F);
+            cklBlacksmiths.Font = new Font("Reem Kufi", 10F);
             cklBlacksmiths.FormattingEnabled = true;
-            cklBlacksmiths.Location = new Point(312, 70);
+            cklBlacksmiths.Location = new Point(312, 61);
             cklBlacksmiths.Name = "cklBlacksmiths";
-            cklBlacksmiths.Size = new Size(120, 94);
+            cklBlacksmiths.Size = new Size(120, 114);
             cklBlacksmiths.TabIndex = 12;
             cklBlacksmiths.ItemCheck += cklBlacksmiths_ItemCheck;
             // 

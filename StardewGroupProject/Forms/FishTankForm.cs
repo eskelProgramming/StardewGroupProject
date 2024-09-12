@@ -314,5 +314,10 @@ namespace StardewGroupProject
                 e.Graphics.DrawPath(pen, path);
             }
         }
+
+        private void cklOceanFish_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

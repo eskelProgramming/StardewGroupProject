@@ -48,11 +48,11 @@
             cklSpringForaging.BackColor = Color.FromArgb(192, 255, 192);
             cklSpringForaging.BorderStyle = BorderStyle.FixedSingle;
             cklSpringForaging.CheckOnClick = true;
-            cklSpringForaging.Font = new Font("Sitka Banner", 12F);
+            cklSpringForaging.Font = new Font("Reem Kufi", 10F);
             cklSpringForaging.FormattingEnabled = true;
-            cklSpringForaging.Location = new Point(289, 54);
+            cklSpringForaging.Location = new Point(289, 51);
             cklSpringForaging.Name = "cklSpringForaging";
-            cklSpringForaging.Size = new Size(158, 94);
+            cklSpringForaging.Size = new Size(158, 114);
             cklSpringForaging.TabIndex = 0;
             cklSpringForaging.ItemCheck += cklSpringForaging_ItemCheck;
             // 
@@ -61,11 +61,11 @@
             cklWinterForaging.BackColor = Color.FromArgb(192, 255, 255);
             cklWinterForaging.BorderStyle = BorderStyle.FixedSingle;
             cklWinterForaging.CheckOnClick = true;
-            cklWinterForaging.Font = new Font("Sitka Banner", 12F);
+            cklWinterForaging.Font = new Font("Reem Kufi", 10F);
             cklWinterForaging.FormattingEnabled = true;
-            cklWinterForaging.Location = new Point(114, 89);
+            cklWinterForaging.Location = new Point(114, 86);
             cklWinterForaging.Name = "cklWinterForaging";
-            cklWinterForaging.Size = new Size(120, 94);
+            cklWinterForaging.Size = new Size(120, 114);
             cklWinterForaging.TabIndex = 1;
             cklWinterForaging.ItemCheck += cklWinterForaging_ItemCheck;
             // 
@@ -74,11 +74,11 @@
             cklExoticForaging.BackColor = Color.FromArgb(255, 192, 255);
             cklExoticForaging.BorderStyle = BorderStyle.FixedSingle;
             cklExoticForaging.CheckOnClick = true;
-            cklExoticForaging.Font = new Font("Sitka Banner", 12F);
+            cklExoticForaging.Font = new Font("Reem Kufi", 10F);
             cklExoticForaging.FormattingEnabled = true;
             cklExoticForaging.Location = new Point(289, 219);
             cklExoticForaging.Name = "cklExoticForaging";
-            cklExoticForaging.Size = new Size(158, 94);
+            cklExoticForaging.Size = new Size(158, 114);
             cklExoticForaging.TabIndex = 2;
             cklExoticForaging.ItemCheck += cklExoticForaging_ItemCheck;
             // 
@@ -87,11 +87,11 @@
             cklSummerForaging.BackColor = Color.FromArgb(255, 255, 192);
             cklSummerForaging.BorderStyle = BorderStyle.FixedSingle;
             cklSummerForaging.CheckOnClick = true;
-            cklSummerForaging.Font = new Font("Sitka Banner", 12F);
+            cklSummerForaging.Font = new Font("Reem Kufi", 10F);
             cklSummerForaging.FormattingEnabled = true;
-            cklSummerForaging.Location = new Point(89, 242);
+            cklSummerForaging.Location = new Point(66, 242);
             cklSummerForaging.Name = "cklSummerForaging";
-            cklSummerForaging.Size = new Size(151, 94);
+            cklSummerForaging.Size = new Size(180, 114);
             cklSummerForaging.TabIndex = 3;
             cklSummerForaging.ItemCheck += cklSummerForaging_ItemCheck;
             // 
@@ -100,11 +100,11 @@
             cklConstruction.BackColor = Color.FromArgb(255, 192, 192);
             cklConstruction.BorderStyle = BorderStyle.FixedSingle;
             cklConstruction.CheckOnClick = true;
-            cklConstruction.Font = new Font("Sitka Banner", 12F);
+            cklConstruction.Font = new Font("Reem Kufi", 10F);
             cklConstruction.FormattingEnabled = true;
-            cklConstruction.Location = new Point(506, 87);
+            cklConstruction.Location = new Point(506, 84);
             cklConstruction.Name = "cklConstruction";
-            cklConstruction.Size = new Size(120, 94);
+            cklConstruction.Size = new Size(120, 114);
             cklConstruction.TabIndex = 4;
             cklConstruction.ItemCheck += cklConstruction_ItemCheck;
             // 
@@ -113,11 +113,11 @@
             cklFallForaging.BackColor = Color.FromArgb(255, 224, 192);
             cklFallForaging.BorderStyle = BorderStyle.FixedSingle;
             cklFallForaging.CheckOnClick = true;
-            cklFallForaging.Font = new Font("Sitka Banner", 12F);
+            cklFallForaging.Font = new Font("Reem Kufi", 10F);
             cklFallForaging.FormattingEnabled = true;
-            cklFallForaging.Location = new Point(497, 242);
+            cklFallForaging.Location = new Point(492, 242);
             cklFallForaging.Name = "cklFallForaging";
-            cklFallForaging.Size = new Size(151, 94);
+            cklFallForaging.Size = new Size(180, 114);
             cklFallForaging.TabIndex = 5;
             cklFallForaging.ItemCheck += cklFallForaging_ItemCheck;
             // 
@@ -126,7 +126,7 @@
             lblSpringForaging.AutoSize = true;
             lblSpringForaging.BackColor = Color.FromArgb(192, 255, 192);
             lblSpringForaging.Font = new Font("Reem Kufi", 12F);
-            lblSpringForaging.Location = new Point(305, 21);
+            lblSpringForaging.Location = new Point(305, 18);
             lblSpringForaging.Name = "lblSpringForaging";
             lblSpringForaging.Size = new Size(128, 30);
             lblSpringForaging.TabIndex = 6;
@@ -138,7 +138,7 @@
             lblWinterForaging.AutoSize = true;
             lblWinterForaging.BackColor = Color.FromArgb(192, 255, 255);
             lblWinterForaging.Font = new Font("Reem Kufi", 12F);
-            lblWinterForaging.Location = new Point(111, 54);
+            lblWinterForaging.Location = new Point(111, 51);
             lblWinterForaging.Name = "lblWinterForaging";
             lblWinterForaging.Size = new Size(129, 30);
             lblWinterForaging.TabIndex = 7;
@@ -162,7 +162,7 @@
             lblSummerForaging.AutoSize = true;
             lblSummerForaging.BackColor = Color.FromArgb(255, 255, 192);
             lblSummerForaging.Font = new Font("Reem Kufi", 12F);
-            lblSummerForaging.Location = new Point(96, 209);
+            lblSummerForaging.Location = new Point(84, 209);
             lblSummerForaging.Name = "lblSummerForaging";
             lblSummerForaging.Size = new Size(138, 30);
             lblSummerForaging.TabIndex = 9;
@@ -174,7 +174,7 @@
             lblConstruction.AutoSize = true;
             lblConstruction.BackColor = Color.FromArgb(255, 192, 192);
             lblConstruction.Font = new Font("Reem Kufi", 12F);
-            lblConstruction.Location = new Point(513, 54);
+            lblConstruction.Location = new Point(513, 51);
             lblConstruction.Name = "lblConstruction";
             lblConstruction.Size = new Size(105, 30);
             lblConstruction.TabIndex = 10;
@@ -186,7 +186,7 @@
             lblFallForaging.AutoSize = true;
             lblFallForaging.BackColor = Color.FromArgb(255, 224, 192);
             lblFallForaging.Font = new Font("Reem Kufi", 12F);
-            lblFallForaging.Location = new Point(521, 209);
+            lblFallForaging.Location = new Point(531, 209);
             lblFallForaging.Name = "lblFallForaging";
             lblFallForaging.Size = new Size(105, 30);
             lblFallForaging.TabIndex = 11;
