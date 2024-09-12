@@ -28,74 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label5 = new Label();
-            label3 = new Label();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoilerRoomForm));
+            lblAdventurers = new Label();
+            lblGeologists = new Label();
+            lblBlacksmiths = new Label();
             cklAdventurers = new CheckedListBox();
             cklGeologists = new CheckedListBox();
             cklBlacksmiths = new CheckedListBox();
             SuspendLayout();
             // 
-            // label5
+            // lblAdventurers
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sitka Banner", 12F);
-            label5.Location = new Point(345, 164);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 23);
-            label5.TabIndex = 22;
-            label5.Text = "Adventurer's";
+            lblAdventurers.AutoSize = true;
+            lblAdventurers.BackColor = Color.FromArgb(255, 192, 255);
+            lblAdventurers.Font = new Font("Reem Kufi", 12F);
+            lblAdventurers.Location = new Point(463, 199);
+            lblAdventurers.Name = "lblAdventurers";
+            lblAdventurers.Size = new Size(104, 30);
+            lblAdventurers.TabIndex = 22;
+            lblAdventurers.Text = "Adventurer's";
+            lblAdventurers.Paint += lblAdventurers_Paint;
             // 
-            // label3
+            // lblGeologists
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sitka Banner", 12F);
-            label3.Location = new Point(49, 164);
-            label3.Name = "label3";
-            label3.Size = new Size(76, 23);
-            label3.TabIndex = 20;
-            label3.Text = "Geologist's";
+            lblGeologists.AutoSize = true;
+            lblGeologists.BackColor = Color.FromArgb(255, 192, 255);
+            lblGeologists.Font = new Font("Reem Kufi", 12F);
+            lblGeologists.Location = new Point(179, 199);
+            lblGeologists.Name = "lblGeologists";
+            lblGeologists.Size = new Size(92, 30);
+            lblGeologists.TabIndex = 20;
+            lblGeologists.Text = "Geologist's";
+            lblGeologists.Paint += lblGeologists_Paint;
             // 
-            // label1
+            // lblBlacksmiths
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(196, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(87, 23);
-            label1.TabIndex = 18;
-            label1.Text = "Blacksmith's";
+            lblBlacksmiths.AutoSize = true;
+            lblBlacksmiths.BackColor = Color.FromArgb(255, 224, 192);
+            lblBlacksmiths.Font = new Font("Reem Kufi", 12F);
+            lblBlacksmiths.Location = new Point(322, 37);
+            lblBlacksmiths.Name = "lblBlacksmiths";
+            lblBlacksmiths.Size = new Size(100, 30);
+            lblBlacksmiths.TabIndex = 18;
+            lblBlacksmiths.Text = "Blacksmith's";
+            lblBlacksmiths.Paint += lblBlacksmiths_Paint;
             // 
             // cklAdventurers
             // 
+            cklAdventurers.BackColor = Color.FromArgb(255, 192, 255);
+            cklAdventurers.BorderStyle = BorderStyle.FixedSingle;
             cklAdventurers.CheckOnClick = true;
             cklAdventurers.Font = new Font("Sitka Banner", 12F);
             cklAdventurers.FormattingEnabled = true;
-            cklAdventurers.Location = new Point(330, 190);
+            cklAdventurers.Location = new Point(456, 231);
             cklAdventurers.Name = "cklAdventurers";
-            cklAdventurers.Size = new Size(120, 50);
+            cklAdventurers.Size = new Size(120, 94);
             cklAdventurers.TabIndex = 16;
             cklAdventurers.ItemCheck += cklAdventurers_ItemCheck;
             // 
             // cklGeologists
             // 
+            cklGeologists.BackColor = Color.FromArgb(255, 192, 255);
+            cklGeologists.BorderStyle = BorderStyle.FixedSingle;
             cklGeologists.CheckOnClick = true;
             cklGeologists.Font = new Font("Sitka Banner", 12F);
             cklGeologists.FormattingEnabled = true;
-            cklGeologists.Location = new Point(32, 190);
+            cklGeologists.Location = new Point(165, 232);
             cklGeologists.Name = "cklGeologists";
-            cklGeologists.Size = new Size(120, 50);
+            cklGeologists.Size = new Size(120, 94);
             cklGeologists.TabIndex = 14;
             cklGeologists.ItemCheck += cklGeologists_ItemCheck;
             // 
             // cklBlacksmiths
             // 
+            cklBlacksmiths.BackColor = Color.FromArgb(255, 224, 192);
+            cklBlacksmiths.BorderStyle = BorderStyle.FixedSingle;
             cklBlacksmiths.CheckOnClick = true;
             cklBlacksmiths.Font = new Font("Sitka Banner", 12F);
             cklBlacksmiths.FormattingEnabled = true;
-            cklBlacksmiths.Location = new Point(182, 48);
+            cklBlacksmiths.Location = new Point(312, 70);
             cklBlacksmiths.Name = "cklBlacksmiths";
-            cklBlacksmiths.Size = new Size(120, 50);
+            cklBlacksmiths.Size = new Size(120, 94);
             cklBlacksmiths.TabIndex = 12;
             cklBlacksmiths.ItemCheck += cklBlacksmiths_ItemCheck;
             // 
@@ -103,13 +116,17 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(482, 321);
-            Controls.Add(label5);
-            Controls.Add(label3);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(763, 383);
+            Controls.Add(lblAdventurers);
+            Controls.Add(lblGeologists);
+            Controls.Add(lblBlacksmiths);
             Controls.Add(cklAdventurers);
             Controls.Add(cklGeologists);
             Controls.Add(cklBlacksmiths);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "BoilerRoomForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Boiler Room Bundles";
@@ -120,9 +137,9 @@
 
         #endregion
 
-        private Label label5;
-		private Label label3;
-		private Label label1;
+        private Label lblAdventurers;
+		private Label lblGeologists;
+		private Label lblBlacksmiths;
 		private CheckedListBox cklAdventurers;
 		private CheckedListBox cklGeologists;
 		private CheckedListBox cklBlacksmiths;
