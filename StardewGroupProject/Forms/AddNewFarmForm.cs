@@ -10,23 +10,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StardewGroupProject.Data;
+using System.Drawing.Drawing2D;
+using StardewGroupProject.Forms;
 
 namespace StardewGroupProject
 {
-	public partial class AddNewFarmForm : Form
-	{
-		public AddNewFarmForm()
-		{
-			InitializeComponent();
-		}
+    public partial class AddNewFarmForm : Form
+    {
+        public AddNewFarmForm()
+        {
+            InitializeComponent();
+        }
 
-		private void btnNewFarmCreate_Click(object sender, EventArgs e)
-		{
-			string newFarmName = txtNewFarmName.Text;
+        private void btnNewFarmCreate_Click(object sender, EventArgs e)
+        {
+            string newFarmName = txtNewFarmName.Text;
 
-			if (Validator.IsValidFarmName(newFarmName)) // Checks if the farm name is valid using the Validator class
-			{
-				Farm farm = new(newFarmName);
+            if (Validator.IsValidFarmName(newFarmName)) // Checks if the farm name is valid using the Validator class
+            {
+                Farm farm = new(newFarmName);
 
                 farm.Rooms =
                 [
@@ -285,21 +287,128 @@ namespace StardewGroupProject
                 ObjectTransferHelper.Context.Farms.Add(farm); // Adds the new Farm object to the Database using Entity Framework
                 ObjectTransferHelper.Context.SaveChanges(); // Saves those changes
 
-				MessageBox.Show("Farm successfully added!");
-				Close();
-			}
-			else
-			{
-				MessageBox.Show("Invalid Farm Name. Must not be empty, and be between 1-12 characters.", "Warning!",
-								MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CustomMessageBoxForm messageBox = new();
 
-				txtNewFarmName.Clear();
-			}
-		}
+                messageBox.ValidFarmNameMessage();
+                messageBox.ShowDialog();
 
-		private void btnNewFarmCancel_Click(object sender, EventArgs e)
-		{
-			Close();
-		}
-	}
+                Close();
+            }
+            else
+            {
+                CustomMessageBoxForm messageBox = new();
+
+                messageBox.InvalidFarmNameMessage();
+                messageBox.ShowDialog();
+
+                txtNewFarmName.Clear();
+            }
+        }
+
+        private void btnNewFarmCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
+        private void btnNewFarmCancel_Paint(object sender, PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+
+            if (btn != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius - 1, btn.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the button's region to the rounded rectangle
+                btn.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void btnNewFarmCreate_Paint(object sender, PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+
+            if (btn != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius - 1, btn.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the button's region to the rounded rectangle
+                btn.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+
+        private void grpAddNewFarm_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+
+            if (box != null)
+            {
+                // Define the color
+                Color woodBrown = Color.FromArgb(226, 122, 62);
+
+                // Create a rounded rectangle path
+                int radius = 10;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(box.Width - radius - 1, 0, radius, radius, 270, 90);
+                path.AddArc(box.Width - radius - 1, box.Height - radius - 1, radius, radius, 0, 90);
+                path.AddArc(0, box.Height - radius - 1, radius, radius, 90, 90);
+                path.CloseAllFigures();
+
+                // Set the GroupBox's region to the rounded rectangle
+                box.Region = new Region(path);
+
+                // Draw the custom border
+                Pen pen = new Pen(woodBrown, 8);
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
+        private void btnNewFarmCancel_MouseEnter(object sender, EventArgs e)
+        {
+            btnNewFarmCancel.BackColor = Color.FromArgb(214, 180, 116);
+        }
+
+        private void btnNewFarmCancel_MouseLeave(object sender, EventArgs e)
+        {
+            btnNewFarmCancel.BackColor = Color.FromArgb(255, 215, 137);
+        }
+
+        private void btnNewFarmCreate_MouseEnter(object sender, EventArgs e)
+        {
+            btnNewFarmCreate.BackColor = Color.FromArgb(214, 180, 116);
+        }
+
+        private void btnNewFarmCreate_MouseLeave(object sender, EventArgs e)
+        {
+            btnNewFarmCreate.BackColor = Color.FromArgb(255, 215, 137);
+        }
+    }
 }

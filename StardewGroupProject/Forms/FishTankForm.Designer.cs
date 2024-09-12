@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FishTankForm));
+            lblOceanFish = new Label();
+            lblSpecialtyFish = new Label();
+            lblLakeFish = new Label();
+            lblCrabPot = new Label();
+            lblNightFishing = new Label();
+            lblRiverFish = new Label();
             cklOceanFish = new CheckedListBox();
             cklSpecialtyFish = new CheckedListBox();
             cklLakeFish = new CheckedListBox();
@@ -42,151 +43,181 @@
             cklRiverFish = new CheckedListBox();
             SuspendLayout();
             // 
-            // label6
+            // lblOceanFish
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sitka Banner", 12F);
-            label6.Location = new Point(467, 323);
-            label6.Name = "label6";
-            label6.Size = new Size(97, 29);
-            label6.TabIndex = 23;
-            label6.Text = "Ocean Fish";
+            lblOceanFish.AutoSize = true;
+            lblOceanFish.BackColor = Color.FromArgb(192, 192, 255);
+            lblOceanFish.Font = new Font("Reem Kufi", 12F);
+            lblOceanFish.Location = new Point(510, 211);
+            lblOceanFish.Name = "lblOceanFish";
+            lblOceanFish.Size = new Size(91, 30);
+            lblOceanFish.TabIndex = 23;
+            lblOceanFish.Text = "Ocean Fish";
+            lblOceanFish.Paint += lblOceanFish_Paint;
             // 
-            // label5
+            // lblSpecialtyFish
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sitka Banner", 12F);
-            label5.Location = new Point(479, 79);
-            label5.Name = "label5";
-            label5.Size = new Size(120, 29);
-            label5.TabIndex = 22;
-            label5.Text = "Specialty Fish";
+            lblSpecialtyFish.AutoSize = true;
+            lblSpecialtyFish.BackColor = Color.FromArgb(255, 192, 192);
+            lblSpecialtyFish.Font = new Font("Reem Kufi", 12F);
+            lblSpecialtyFish.Location = new Point(501, 45);
+            lblSpecialtyFish.Name = "lblSpecialtyFish";
+            lblSpecialtyFish.Size = new Size(109, 30);
+            lblSpecialtyFish.TabIndex = 22;
+            lblSpecialtyFish.Text = "Specialty Fish";
+            lblSpecialtyFish.Paint += lblSpecialtyFish_Paint;
             // 
-            // label4
+            // lblLakeFish
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Sitka Banner", 12F);
-            label4.Location = new Point(98, 327);
-            label4.Name = "label4";
-            label4.Size = new Size(86, 29);
-            label4.TabIndex = 21;
-            label4.Text = "Lake Fish";
+            lblLakeFish.AutoSize = true;
+            lblLakeFish.BackColor = Color.FromArgb(192, 255, 192);
+            lblLakeFish.Font = new Font("Reem Kufi", 12F);
+            lblLakeFish.Location = new Point(137, 211);
+            lblLakeFish.Name = "lblLakeFish";
+            lblLakeFish.Size = new Size(79, 30);
+            lblLakeFish.TabIndex = 21;
+            lblLakeFish.Text = "Lake Fish";
+            lblLakeFish.Paint += lblLakeFish_Paint;
             // 
-            // label3
+            // lblCrabPot
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sitka Banner", 12F);
-            label3.Location = new Point(290, 221);
-            label3.Name = "label3";
-            label3.Size = new Size(79, 29);
-            label3.TabIndex = 20;
-            label3.Text = "Crab Pot";
+            lblCrabPot.AutoSize = true;
+            lblCrabPot.BackColor = Color.FromArgb(255, 192, 255);
+            lblCrabPot.Font = new Font("Reem Kufi", 12F);
+            lblCrabPot.Location = new Point(327, 181);
+            lblCrabPot.Name = "lblCrabPot";
+            lblCrabPot.Size = new Size(76, 30);
+            lblCrabPot.TabIndex = 20;
+            lblCrabPot.Text = "Crab Pot";
+            lblCrabPot.Paint += lblCrabPot_Paint;
             // 
-            // label2
+            // lblNightFishing
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Banner", 12F);
-            label2.Location = new Point(50, 79);
-            label2.Name = "label2";
-            label2.Size = new Size(117, 29);
-            label2.TabIndex = 19;
-            label2.Text = "Night Fishing";
+            lblNightFishing.AutoSize = true;
+            lblNightFishing.BackColor = Color.FromArgb(255, 192, 255);
+            lblNightFishing.Font = new Font("Reem Kufi", 12F);
+            lblNightFishing.Location = new Point(116, 45);
+            lblNightFishing.Name = "lblNightFishing";
+            lblNightFishing.Size = new Size(109, 30);
+            lblNightFishing.TabIndex = 19;
+            lblNightFishing.Text = "Night Fishing";
+            lblNightFishing.Paint += lblNightFishing_Paint;
             // 
-            // label1
+            // lblRiverFish
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(280, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 29);
-            label1.TabIndex = 18;
-            label1.Text = "River Fish";
+            lblRiverFish.AutoSize = true;
+            lblRiverFish.BackColor = Color.FromArgb(192, 255, 255);
+            lblRiverFish.Font = new Font("Reem Kufi", 12F);
+            lblRiverFish.Location = new Point(327, 12);
+            lblRiverFish.Name = "lblRiverFish";
+            lblRiverFish.Size = new Size(81, 30);
+            lblRiverFish.TabIndex = 18;
+            lblRiverFish.Text = "River Fish";
+            lblRiverFish.Paint += lblRiverFish_Paint;
             // 
             // cklOceanFish
             // 
-            cklOceanFish.Font = new Font("Sitka Banner", 12F);
+            cklOceanFish.BackColor = Color.FromArgb(192, 192, 255);
+            cklOceanFish.BorderStyle = BorderStyle.FixedSingle;
+            cklOceanFish.CheckOnClick = true;
+            cklOceanFish.Font = new Font("Reem Kufi", 10F);
             cklOceanFish.FormattingEnabled = true;
-            cklOceanFish.Location = new Point(443, 361);
-            cklOceanFish.Margin = new Padding(3, 4, 3, 4);
+            cklOceanFish.Location = new Point(482, 244);
             cklOceanFish.Name = "cklOceanFish";
-            cklOceanFish.Size = new Size(137, 88);
+            cklOceanFish.Size = new Size(151, 114);
             cklOceanFish.TabIndex = 17;
             cklOceanFish.ItemCheck += cklOceanFish_ItemCheck;
+            cklOceanFish.SelectedIndexChanged += cklOceanFish_SelectedIndexChanged;
             // 
             // cklSpecialtyFish
             // 
-            cklSpecialtyFish.Font = new Font("Sitka Banner", 12F);
+            cklSpecialtyFish.BackColor = Color.FromArgb(255, 192, 192);
+            cklSpecialtyFish.BorderStyle = BorderStyle.FixedSingle;
+            cklSpecialtyFish.CheckOnClick = true;
+            cklSpecialtyFish.Font = new Font("Reem Kufi", 10F);
             cklSpecialtyFish.FormattingEnabled = true;
-            cklSpecialtyFish.Location = new Point(467, 113);
-            cklSpecialtyFish.Margin = new Padding(3, 4, 3, 4);
+            cklSpecialtyFish.Location = new Point(496, 78);
             cklSpecialtyFish.Name = "cklSpecialtyFish";
-            cklSpecialtyFish.Size = new Size(137, 88);
+            cklSpecialtyFish.Size = new Size(120, 114);
             cklSpecialtyFish.TabIndex = 16;
             cklSpecialtyFish.ItemCheck += cklSpecialtyFish_ItemCheck;
             // 
             // cklLakeFish
             // 
-            cklLakeFish.Font = new Font("Sitka Banner", 12F);
+            cklLakeFish.BackColor = Color.FromArgb(192, 255, 192);
+            cklLakeFish.BorderStyle = BorderStyle.FixedSingle;
+            cklLakeFish.CheckOnClick = true;
+            cklLakeFish.Font = new Font("Reem Kufi", 10F);
             cklLakeFish.FormattingEnabled = true;
-            cklLakeFish.Location = new Point(77, 361);
-            cklLakeFish.Margin = new Padding(3, 4, 3, 4);
+            cklLakeFish.Location = new Point(103, 244);
             cklLakeFish.Name = "cklLakeFish";
-            cklLakeFish.Size = new Size(137, 88);
+            cklLakeFish.Size = new Size(151, 114);
             cklLakeFish.TabIndex = 15;
             cklLakeFish.ItemCheck += cklLakeFish_ItemCheck;
             // 
             // cklCrabPot
             // 
-            cklCrabPot.Font = new Font("Sitka Banner", 12F);
+            cklCrabPot.BackColor = Color.FromArgb(255, 192, 255);
+            cklCrabPot.BorderStyle = BorderStyle.FixedSingle;
+            cklCrabPot.CheckOnClick = true;
+            cklCrabPot.Font = new Font("Reem Kufi", 10F);
             cklCrabPot.FormattingEnabled = true;
-            cklCrabPot.Location = new Point(257, 256);
-            cklCrabPot.Margin = new Padding(3, 4, 3, 4);
+            cklCrabPot.Location = new Point(307, 214);
             cklCrabPot.Name = "cklCrabPot";
-            cklCrabPot.Size = new Size(137, 88);
+            cklCrabPot.Size = new Size(120, 114);
             cklCrabPot.TabIndex = 14;
             cklCrabPot.ItemCheck += cklCrabPot_ItemCheck;
             // 
             // cklNightFishing
             // 
-            cklNightFishing.Font = new Font("Sitka Banner", 12F);
+            cklNightFishing.BackColor = Color.FromArgb(255, 192, 255);
+            cklNightFishing.BorderStyle = BorderStyle.FixedSingle;
+            cklNightFishing.CheckOnClick = true;
+            cklNightFishing.Font = new Font("Reem Kufi", 10F);
             cklNightFishing.FormattingEnabled = true;
-            cklNightFishing.Location = new Point(40, 113);
-            cklNightFishing.Margin = new Padding(3, 4, 3, 4);
+            cklNightFishing.Location = new Point(112, 78);
             cklNightFishing.Name = "cklNightFishing";
-            cklNightFishing.Size = new Size(137, 88);
+            cklNightFishing.Size = new Size(120, 114);
             cklNightFishing.TabIndex = 13;
             cklNightFishing.ItemCheck += cklNightFishing_ItemCheck;
             // 
             // cklRiverFish
             // 
-            cklRiverFish.Font = new Font("Sitka Banner", 12F);
+            cklRiverFish.BackColor = Color.FromArgb(192, 255, 255);
+            cklRiverFish.BorderStyle = BorderStyle.FixedSingle;
+            cklRiverFish.CheckOnClick = true;
+            cklRiverFish.Font = new Font("Reem Kufi", 10F);
             cklRiverFish.FormattingEnabled = true;
-            cklRiverFish.Location = new Point(257, 57);
-            cklRiverFish.Margin = new Padding(3, 4, 3, 4);
+            cklRiverFish.Location = new Point(307, 45);
             cklRiverFish.Name = "cklRiverFish";
-            cklRiverFish.Size = new Size(137, 88);
+            cklRiverFish.Size = new Size(120, 114);
             cklRiverFish.TabIndex = 12;
             cklRiverFish.ItemCheck += cklRiverFish_ItemCheck;
             // 
             // FishTankForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(649, 540);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(763, 383);
+            Controls.Add(lblOceanFish);
+            Controls.Add(lblSpecialtyFish);
+            Controls.Add(lblLakeFish);
+            Controls.Add(lblCrabPot);
+            Controls.Add(lblNightFishing);
+            Controls.Add(lblRiverFish);
             Controls.Add(cklOceanFish);
             Controls.Add(cklSpecialtyFish);
             Controls.Add(cklLakeFish);
             Controls.Add(cklCrabPot);
             Controls.Add(cklNightFishing);
             Controls.Add(cklRiverFish);
-            Margin = new Padding(3, 4, 3, 4);
+            DoubleBuffered = true;
+            ForeColor = SystemColors.WindowText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FishTankForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Fish Tank Bundles";
             Load += FishTankForm_Load;
             ResumeLayout(false);
@@ -195,12 +226,12 @@
 
         #endregion
 
-        private Label label6;
-		private Label label5;
-		private Label label4;
-		private Label label3;
-		private Label label2;
-		private Label label1;
+        private Label lblOceanFish;
+		private Label lblSpecialtyFish;
+		private Label lblLakeFish;
+		private Label lblCrabPot;
+		private Label lblNightFishing;
+		private Label lblRiverFish;
 		private CheckedListBox cklOceanFish;
 		private CheckedListBox cklSpecialtyFish;
 		private CheckedListBox cklLakeFish;

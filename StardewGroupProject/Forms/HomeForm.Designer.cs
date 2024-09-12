@@ -28,90 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             btnAddNewFarm = new Button();
             btnDeleteFarm = new Button();
             btnViewCommunityCenter = new Button();
             cmbFarmNames = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
+            lblChooseFarm = new Label();
+            lblWelcomeMessage = new Label();
             SuspendLayout();
             // 
             // btnAddNewFarm
             // 
-            btnAddNewFarm.Font = new Font("Sitka Subheading", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddNewFarm.Location = new Point(343, 22);
+            btnAddNewFarm.BackColor = Color.FromArgb(255, 215, 137);
+            btnAddNewFarm.Font = new Font("Reem Kufi", 15F);
+            btnAddNewFarm.Location = new Point(392, 104);
             btnAddNewFarm.Name = "btnAddNewFarm";
-            btnAddNewFarm.Size = new Size(172, 71);
+            btnAddNewFarm.Size = new Size(188, 102);
             btnAddNewFarm.TabIndex = 0;
             btnAddNewFarm.Text = "Add a new Farm";
-            btnAddNewFarm.UseVisualStyleBackColor = true;
+            btnAddNewFarm.UseVisualStyleBackColor = false;
             btnAddNewFarm.Click += btnAddNewFarm_Click;
+            btnAddNewFarm.Paint += btnAddNewFarm_Paint;
+            btnAddNewFarm.MouseEnter += btnAddNewFarm_MouseEnter;
+            btnAddNewFarm.MouseLeave += btnAddNewFarm_MouseLeave;
             // 
             // btnDeleteFarm
             // 
-            btnDeleteFarm.Font = new Font("Sitka Subheading", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDeleteFarm.Location = new Point(343, 153);
+            btnDeleteFarm.BackColor = Color.FromArgb(255, 215, 137);
+            btnDeleteFarm.Font = new Font("Reem Kufi", 15F);
+            btnDeleteFarm.Location = new Point(112, 277);
             btnDeleteFarm.Name = "btnDeleteFarm";
-            btnDeleteFarm.Size = new Size(172, 71);
+            btnDeleteFarm.Size = new Size(188, 102);
             btnDeleteFarm.TabIndex = 1;
             btnDeleteFarm.Text = "Delete selected Farm";
-            btnDeleteFarm.UseVisualStyleBackColor = true;
+            btnDeleteFarm.UseVisualStyleBackColor = false;
             btnDeleteFarm.Click += btnDeleteFarm_Click;
+            btnDeleteFarm.Paint += btnDeleteFarm_Paint;
+            btnDeleteFarm.MouseEnter += btnDeleteFarm_MouseEnter;
+            btnDeleteFarm.MouseLeave += btnDeleteFarm_MouseLeave;
             // 
             // btnViewCommunityCenter
             // 
-            btnViewCommunityCenter.Font = new Font("Sitka Subheading", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnViewCommunityCenter.Location = new Point(343, 283);
+            btnViewCommunityCenter.BackColor = Color.FromArgb(255, 215, 137);
+            btnViewCommunityCenter.Font = new Font("Reem Kufi", 15F);
+            btnViewCommunityCenter.Location = new Point(392, 277);
             btnViewCommunityCenter.Name = "btnViewCommunityCenter";
-            btnViewCommunityCenter.Size = new Size(172, 71);
+            btnViewCommunityCenter.Size = new Size(188, 102);
             btnViewCommunityCenter.TabIndex = 2;
             btnViewCommunityCenter.Text = "View the Bundles";
-            btnViewCommunityCenter.UseVisualStyleBackColor = true;
+            btnViewCommunityCenter.UseVisualStyleBackColor = false;
             btnViewCommunityCenter.Click += btnViewCommunityCenter_Click;
+            btnViewCommunityCenter.Paint += btnViewCommunityCenter_Paint;
+            btnViewCommunityCenter.MouseEnter += btnViewCommunityCenter_MouseEnter;
+            btnViewCommunityCenter.MouseLeave += btnViewCommunityCenter_MouseLeave;
             // 
             // cmbFarmNames
             // 
+            cmbFarmNames.BackColor = Color.FromArgb(255, 215, 137);
+            cmbFarmNames.DrawMode = DrawMode.OwnerDrawFixed;
             cmbFarmNames.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbFarmNames.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmbFarmNames.Font = new Font("Reem Kufi", 12F);
             cmbFarmNames.FormattingEnabled = true;
-            cmbFarmNames.Location = new Point(90, 174);
+            cmbFarmNames.Location = new Point(123, 151);
             cmbFarmNames.Name = "cmbFarmNames";
-            cmbFarmNames.Size = new Size(161, 31);
+            cmbFarmNames.Size = new Size(168, 39);
             cmbFarmNames.TabIndex = 3;
+            cmbFarmNames.DrawItem += cmbFarmNames_DrawItem;
             cmbFarmNames.SelectedIndexChanged += cmbFarmNames_SelectedIndexChanged;
             // 
-            // label1
+            // lblChooseFarm
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Subheading", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(110, 137);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 23);
-            label1.TabIndex = 4;
-            label1.Text = "Choose a Farm:";
+            lblChooseFarm.AutoSize = true;
+            lblChooseFarm.BackColor = Color.FromArgb(255, 215, 137);
+            lblChooseFarm.Font = new Font("Reem Kufi", 12F);
+            lblChooseFarm.Location = new Point(149, 118);
+            lblChooseFarm.Name = "lblChooseFarm";
+            lblChooseFarm.Size = new Size(118, 30);
+            lblChooseFarm.TabIndex = 4;
+            lblChooseFarm.Text = "Choose a Farm:";
+            lblChooseFarm.Paint += lblChooseFarm_Paint;
             // 
-            // label2
+            // lblWelcomeMessage
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Subheading", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 44);
-            label2.Name = "label2";
-            label2.Size = new Size(309, 28);
-            label2.TabIndex = 5;
-            label2.Text = "Welcome to the Community Center!";
+            lblWelcomeMessage.AutoSize = true;
+            lblWelcomeMessage.BackColor = Color.FromArgb(255, 215, 137);
+            lblWelcomeMessage.Font = new Font("Reem Kufi", 15F);
+            lblWelcomeMessage.Location = new Point(184, 22);
+            lblWelcomeMessage.Name = "lblWelcomeMessage";
+            lblWelcomeMessage.Size = new Size(327, 38);
+            lblWelcomeMessage.TabIndex = 5;
+            lblWelcomeMessage.Text = "Welcome to the Community Center!";
+            lblWelcomeMessage.Paint += lblWelcomeMessage_Paint;
             // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(547, 386);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(691, 426);
+            Controls.Add(lblWelcomeMessage);
+            Controls.Add(lblChooseFarm);
             Controls.Add(cmbFarmNames);
             Controls.Add(btnViewCommunityCenter);
             Controls.Add(btnDeleteFarm);
             Controls.Add(btnAddNewFarm);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "HomeForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             Load += HomeForm_Load;
             ResumeLayout(false);
@@ -124,7 +150,7 @@
 		private Button btnDeleteFarm;
 		private Button btnViewCommunityCenter;
 		private ComboBox cmbFarmNames;
-		private Label label1;
-		private Label label2;
+		private Label lblChooseFarm;
+		private Label lblWelcomeMessage;
 	}
 }

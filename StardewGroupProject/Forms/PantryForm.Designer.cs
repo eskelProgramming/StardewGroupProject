@@ -28,165 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantryForm));
+            lblFallCrops = new Label();
+            lblAnimal = new Label();
+            lblSummerCrops = new Label();
+            lblArtisan = new Label();
+            lblQualityCrops = new Label();
             cklFallCrops = new CheckedListBox();
             cklAnimal = new CheckedListBox();
             cklSummerCrops = new CheckedListBox();
             cklArtisan = new CheckedListBox();
             cklQualityCrops = new CheckedListBox();
             cklSpringCrops = new CheckedListBox();
+            lblSpringCrops = new Label();
             SuspendLayout();
             // 
-            // label6
+            // lblFallCrops
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sitka Banner", 12F);
-            label6.Location = new Point(467, 328);
-            label6.Name = "label6";
-            label6.Size = new Size(90, 29);
-            label6.TabIndex = 23;
-            label6.Text = "Fall Crops";
+            lblFallCrops.AutoSize = true;
+            lblFallCrops.BackColor = Color.FromArgb(255, 224, 192);
+            lblFallCrops.Font = new Font("Reem Kufi", 12F);
+            lblFallCrops.Location = new Point(491, 207);
+            lblFallCrops.Name = "lblFallCrops";
+            lblFallCrops.Size = new Size(83, 30);
+            lblFallCrops.TabIndex = 23;
+            lblFallCrops.Text = "Fall Crops";
+            lblFallCrops.Paint += lblFallCrops_Paint;
             // 
-            // label5
+            // lblAnimal
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sitka Banner", 12F);
-            label5.Location = new Point(506, 80);
-            label5.Name = "label5";
-            label5.Size = new Size(68, 29);
-            label5.TabIndex = 22;
-            label5.Text = "Animal";
+            lblAnimal.AutoSize = true;
+            lblAnimal.BackColor = Color.FromArgb(255, 192, 192);
+            lblAnimal.Font = new Font("Reem Kufi", 12F);
+            lblAnimal.Location = new Point(541, 50);
+            lblAnimal.Name = "lblAnimal";
+            lblAnimal.Size = new Size(63, 30);
+            lblAnimal.TabIndex = 22;
+            lblAnimal.Text = "Animal";
+            lblAnimal.Paint += lblAnimal_Paint;
             // 
-            // label4
+            // lblSummerCrops
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Sitka Banner", 12F);
-            label4.Location = new Point(86, 324);
-            label4.Name = "label4";
-            label4.Size = new Size(127, 29);
-            label4.TabIndex = 21;
-            label4.Text = "Summer Crops";
+            lblSummerCrops.AutoSize = true;
+            lblSummerCrops.BackColor = Color.FromArgb(255, 255, 192);
+            lblSummerCrops.Font = new Font("Reem Kufi", 12F);
+            lblSummerCrops.Location = new Point(152, 207);
+            lblSummerCrops.Name = "lblSummerCrops";
+            lblSummerCrops.Size = new Size(116, 30);
+            lblSummerCrops.TabIndex = 21;
+            lblSummerCrops.Text = "Summer Crops";
+            lblSummerCrops.Paint += lblSummerCrops_Paint;
             // 
-            // label3
+            // lblArtisan
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sitka Banner", 12F);
-            label3.Location = new Point(295, 223);
-            label3.Name = "label3";
-            label3.Size = new Size(68, 29);
-            label3.TabIndex = 20;
-            label3.Text = "Artisan";
+            lblArtisan.AutoSize = true;
+            lblArtisan.BackColor = Color.FromArgb(192, 192, 255);
+            lblArtisan.Font = new Font("Reem Kufi", 12F);
+            lblArtisan.Location = new Point(337, 194);
+            lblArtisan.Name = "lblArtisan";
+            lblArtisan.Size = new Size(65, 30);
+            lblArtisan.TabIndex = 20;
+            lblArtisan.Text = "Artisan";
+            lblArtisan.Paint += lblArtisan_Paint;
             // 
-            // label2
+            // lblQualityCrops
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Banner", 12F);
-            label2.Location = new Point(55, 80);
-            label2.Name = "label2";
-            label2.Size = new Size(118, 29);
-            label2.TabIndex = 19;
-            label2.Text = "Quality Crops";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(272, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(113, 29);
-            label1.TabIndex = 18;
-            label1.Text = "Spring Crops";
+            lblQualityCrops.AutoSize = true;
+            lblQualityCrops.BackColor = Color.FromArgb(192, 255, 255);
+            lblQualityCrops.Font = new Font("Reem Kufi", 12F);
+            lblQualityCrops.Location = new Point(114, 50);
+            lblQualityCrops.Name = "lblQualityCrops";
+            lblQualityCrops.Size = new Size(112, 30);
+            lblQualityCrops.TabIndex = 19;
+            lblQualityCrops.Text = "Quality Crops";
+            lblQualityCrops.Paint += lblQualityCrops_Paint;
             // 
             // cklFallCrops
             // 
-            cklFallCrops.Font = new Font("Sitka Banner", 12F);
+            cklFallCrops.BackColor = Color.FromArgb(255, 224, 192);
+            cklFallCrops.BorderStyle = BorderStyle.FixedSingle;
+            cklFallCrops.CheckOnClick = true;
+            cklFallCrops.Font = new Font("Reem Kufi", 10F);
             cklFallCrops.FormattingEnabled = true;
-            cklFallCrops.Location = new Point(443, 363);
-            cklFallCrops.Margin = new Padding(3, 4, 3, 4);
+            cklFallCrops.Location = new Point(471, 240);
             cklFallCrops.Name = "cklFallCrops";
-            cklFallCrops.Size = new Size(137, 88);
+            cklFallCrops.Size = new Size(120, 114);
             cklFallCrops.TabIndex = 17;
             cklFallCrops.ItemCheck += cklFallCrops_ItemCheck;
             // 
             // cklAnimal
             // 
-            cklAnimal.Font = new Font("Sitka Banner", 12F);
+            cklAnimal.BackColor = Color.FromArgb(255, 192, 192);
+            cklAnimal.BorderStyle = BorderStyle.FixedSingle;
+            cklAnimal.CheckOnClick = true;
+            cklAnimal.Font = new Font("Reem Kufi", 10F);
             cklAnimal.FormattingEnabled = true;
-            cklAnimal.Location = new Point(467, 115);
-            cklAnimal.Margin = new Padding(3, 4, 3, 4);
+            cklAnimal.Location = new Point(487, 83);
             cklAnimal.Name = "cklAnimal";
-            cklAnimal.Size = new Size(137, 88);
+            cklAnimal.Size = new Size(170, 114);
             cklAnimal.TabIndex = 16;
             cklAnimal.ItemCheck += cklAnimal_ItemCheck;
             // 
             // cklSummerCrops
             // 
-            cklSummerCrops.Font = new Font("Sitka Banner", 12F);
+            cklSummerCrops.BackColor = Color.FromArgb(255, 255, 192);
+            cklSummerCrops.BorderStyle = BorderStyle.FixedSingle;
+            cklSummerCrops.CheckOnClick = true;
+            cklSummerCrops.Font = new Font("Reem Kufi", 10F);
             cklSummerCrops.FormattingEnabled = true;
-            cklSummerCrops.Location = new Point(78, 363);
-            cklSummerCrops.Margin = new Padding(3, 4, 3, 4);
+            cklSummerCrops.Location = new Point(150, 240);
             cklSummerCrops.Name = "cklSummerCrops";
-            cklSummerCrops.Size = new Size(137, 88);
+            cklSummerCrops.Size = new Size(120, 114);
             cklSummerCrops.TabIndex = 15;
             cklSummerCrops.ItemCheck += cklSummerCrops_ItemCheck;
             // 
             // cklArtisan
             // 
-            cklArtisan.Font = new Font("Sitka Banner", 12F);
+            cklArtisan.BackColor = Color.FromArgb(192, 192, 255);
+            cklArtisan.BorderStyle = BorderStyle.FixedSingle;
+            cklArtisan.CheckOnClick = true;
+            cklArtisan.Font = new Font("Reem Kufi", 10F);
             cklArtisan.FormattingEnabled = true;
-            cklArtisan.Location = new Point(257, 257);
-            cklArtisan.Margin = new Padding(3, 4, 3, 4);
+            cklArtisan.Location = new Point(305, 227);
             cklArtisan.Name = "cklArtisan";
-            cklArtisan.Size = new Size(137, 88);
+            cklArtisan.Size = new Size(129, 114);
             cklArtisan.TabIndex = 14;
             cklArtisan.ItemCheck += cklArtisan_ItemCheck;
             // 
             // cklQualityCrops
             // 
-            cklQualityCrops.Font = new Font("Sitka Banner", 12F);
+            cklQualityCrops.BackColor = Color.FromArgb(192, 255, 255);
+            cklQualityCrops.BorderStyle = BorderStyle.FixedSingle;
+            cklQualityCrops.CheckOnClick = true;
+            cklQualityCrops.Font = new Font("Reem Kufi", 10F);
             cklQualityCrops.FormattingEnabled = true;
-            cklQualityCrops.Location = new Point(40, 115);
-            cklQualityCrops.Margin = new Padding(3, 4, 3, 4);
+            cklQualityCrops.Location = new Point(87, 83);
             cklQualityCrops.Name = "cklQualityCrops";
-            cklQualityCrops.Size = new Size(137, 88);
+            cklQualityCrops.Size = new Size(170, 114);
             cklQualityCrops.TabIndex = 13;
             cklQualityCrops.ItemCheck += cklQualityCrops_ItemCheck;
             // 
             // cklSpringCrops
             // 
-            cklSpringCrops.Font = new Font("Sitka Banner", 12F);
+            cklSpringCrops.BackColor = Color.FromArgb(192, 255, 192);
+            cklSpringCrops.BorderStyle = BorderStyle.FixedSingle;
+            cklSpringCrops.CheckOnClick = true;
+            cklSpringCrops.Font = new Font("Reem Kufi", 10F);
             cklSpringCrops.FormattingEnabled = true;
-            cklSpringCrops.Location = new Point(257, 59);
-            cklSpringCrops.Margin = new Padding(3, 4, 3, 4);
+            cklSpringCrops.Location = new Point(305, 50);
             cklSpringCrops.Name = "cklSpringCrops";
-            cklSpringCrops.Size = new Size(137, 88);
+            cklSpringCrops.Size = new Size(129, 114);
             cklSpringCrops.TabIndex = 12;
             cklSpringCrops.ItemCheck += cklSpringCrops_ItemCheck;
             // 
+            // lblSpringCrops
+            // 
+            lblSpringCrops.AutoSize = true;
+            lblSpringCrops.BackColor = Color.FromArgb(192, 255, 192);
+            lblSpringCrops.Font = new Font("Reem Kufi", 12F);
+            lblSpringCrops.Location = new Point(317, 17);
+            lblSpringCrops.Name = "lblSpringCrops";
+            lblSpringCrops.Size = new Size(106, 30);
+            lblSpringCrops.TabIndex = 18;
+            lblSpringCrops.Text = "Spring Crops";
+            lblSpringCrops.Paint += lblSpringCrops_Paint;
+            // 
             // PantryForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(649, 540);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(763, 383);
+            Controls.Add(lblFallCrops);
+            Controls.Add(lblAnimal);
+            Controls.Add(lblSummerCrops);
+            Controls.Add(lblArtisan);
+            Controls.Add(lblQualityCrops);
+            Controls.Add(lblSpringCrops);
             Controls.Add(cklFallCrops);
             Controls.Add(cklAnimal);
             Controls.Add(cklSummerCrops);
             Controls.Add(cklArtisan);
             Controls.Add(cklQualityCrops);
             Controls.Add(cklSpringCrops);
-            Margin = new Padding(3, 4, 3, 4);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PantryForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Pantry Bundles";
             Load += PantryForm_Load;
             ResumeLayout(false);
@@ -195,17 +224,17 @@
 
         #endregion
 
-        private Label label6;
-		private Label label5;
-		private Label label4;
-		private Label label3;
-		private Label label2;
-		private Label label1;
+        private Label lblFallCrops;
+		private Label lblAnimal;
+		private Label lblSummerCrops;
+		private Label lblArtisan;
+		private Label lblQualityCrops;
 		private CheckedListBox cklFallCrops;
 		private CheckedListBox cklAnimal;
 		private CheckedListBox cklSummerCrops;
 		private CheckedListBox cklArtisan;
 		private CheckedListBox cklQualityCrops;
 		private CheckedListBox cklSpringCrops;
-	}
+        private Label lblSpringCrops;
+    }
 }
