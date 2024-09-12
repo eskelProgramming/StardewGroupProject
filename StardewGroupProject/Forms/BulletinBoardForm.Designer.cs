@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BulletinBoardForm));
+            lblEnchanters = new Label();
+            lblFodder = new Label();
+            lblFieldResearch = new Label();
+            lblDye = new Label();
+            lblChefs = new Label();
             cklEnchanters = new CheckedListBox();
             cklFodder = new CheckedListBox();
             cklFieldResearch = new CheckedListBox();
@@ -40,108 +41,128 @@
             cklChefs = new CheckedListBox();
             SuspendLayout();
             // 
-            // label6
+            // lblEnchanters
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sitka Banner", 12F);
-            label6.Location = new Point(408, 238);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 23);
-            label6.TabIndex = 23;
-            label6.Text = "Enchanter's";
+            lblEnchanters.AutoSize = true;
+            lblEnchanters.BackColor = Color.FromArgb(255, 192, 255);
+            lblEnchanters.Font = new Font("Reem Kufi", 12F);
+            lblEnchanters.Location = new Point(460, 206);
+            lblEnchanters.Name = "lblEnchanters";
+            lblEnchanters.Size = new Size(96, 30);
+            lblEnchanters.TabIndex = 23;
+            lblEnchanters.Text = "Enchanter's";
+            lblEnchanters.Paint += lblEnchanters_Paint;
             // 
-            // label5
+            // lblFodder
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sitka Banner", 12F);
-            label5.Location = new Point(423, 16);
-            label5.Name = "label5";
-            label5.Size = new Size(54, 23);
-            label5.TabIndex = 22;
-            label5.Text = "Fodder";
+            lblFodder.AutoSize = true;
+            lblFodder.BackColor = Color.FromArgb(255, 255, 192);
+            lblFodder.Font = new Font("Reem Kufi", 12F);
+            lblFodder.Location = new Point(568, 62);
+            lblFodder.Name = "lblFodder";
+            lblFodder.Size = new Size(64, 30);
+            lblFodder.TabIndex = 22;
+            lblFodder.Text = "Fodder";
+            lblFodder.Paint += lblFodder_Paint;
             // 
-            // label4
+            // lblFieldResearch
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Sitka Banner", 12F);
-            label4.Location = new Point(77, 238);
-            label4.Name = "label4";
-            label4.Size = new Size(101, 23);
-            label4.TabIndex = 21;
-            label4.Text = "Field Research";
+            lblFieldResearch.AutoSize = true;
+            lblFieldResearch.BackColor = Color.FromArgb(192, 192, 255);
+            lblFieldResearch.Font = new Font("Reem Kufi", 12F);
+            lblFieldResearch.Location = new Point(159, 206);
+            lblFieldResearch.Name = "lblFieldResearch";
+            lblFieldResearch.Size = new Size(115, 30);
+            lblFieldResearch.TabIndex = 21;
+            lblFieldResearch.Text = "Field Research";
+            lblFieldResearch.Paint += lblFieldResearch_Paint;
             // 
-            // label2
+            // lblDye
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Banner", 12F);
-            label2.Location = new Point(110, 16);
-            label2.Name = "label2";
-            label2.Size = new Size(34, 23);
-            label2.TabIndex = 19;
-            label2.Text = "Dye";
+            lblDye.AutoSize = true;
+            lblDye.BackColor = Color.FromArgb(192, 255, 255);
+            lblDye.Font = new Font("Reem Kufi", 12F);
+            lblDye.Location = new Point(126, 62);
+            lblDye.Name = "lblDye";
+            lblDye.Size = new Size(41, 30);
+            lblDye.TabIndex = 19;
+            lblDye.Text = "Dye";
+            lblDye.Paint += lblDye_Paint;
             // 
-            // label1
+            // lblChefs
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(264, 126);
-            label1.Name = "label1";
-            label1.Size = new Size(48, 23);
-            label1.TabIndex = 18;
-            label1.Text = "Chef's";
+            lblChefs.AutoSize = true;
+            lblChefs.BackColor = Color.FromArgb(255, 192, 192);
+            lblChefs.Font = new Font("Reem Kufi", 12F);
+            lblChefs.Location = new Point(343, 28);
+            lblChefs.Name = "lblChefs";
+            lblChefs.Size = new Size(57, 30);
+            lblChefs.TabIndex = 18;
+            lblChefs.Text = "Chef's";
+            lblChefs.Paint += lblChefs_Paint;
             // 
             // cklEnchanters
             // 
+            cklEnchanters.BackColor = Color.FromArgb(255, 192, 255);
+            cklEnchanters.BorderStyle = BorderStyle.FixedSingle;
             cklEnchanters.CheckOnClick = true;
             cklEnchanters.Font = new Font("Sitka Banner", 12F);
             cklEnchanters.FormattingEnabled = true;
-            cklEnchanters.Location = new Point(387, 264);
+            cklEnchanters.Location = new Point(431, 239);
             cklEnchanters.Name = "cklEnchanters";
-            cklEnchanters.Size = new Size(120, 50);
+            cklEnchanters.Size = new Size(155, 94);
             cklEnchanters.TabIndex = 17;
             cklEnchanters.ItemCheck += cklEnchanters_ItemCheck;
             // 
             // cklFodder
             // 
+            cklFodder.BackColor = Color.FromArgb(255, 255, 192);
+            cklFodder.BorderStyle = BorderStyle.FixedSingle;
             cklFodder.CheckOnClick = true;
             cklFodder.Font = new Font("Sitka Banner", 12F);
             cklFodder.FormattingEnabled = true;
-            cklFodder.Location = new Point(387, 42);
+            cklFodder.Location = new Point(520, 95);
             cklFodder.Name = "cklFodder";
-            cklFodder.Size = new Size(120, 50);
+            cklFodder.Size = new Size(155, 94);
             cklFodder.TabIndex = 16;
             cklFodder.ItemCheck += cklFodder_ItemCheck;
             // 
             // cklFieldResearch
             // 
+            cklFieldResearch.BackColor = Color.FromArgb(192, 192, 255);
+            cklFieldResearch.BorderStyle = BorderStyle.FixedSingle;
             cklFieldResearch.CheckOnClick = true;
             cklFieldResearch.Font = new Font("Sitka Banner", 12F);
             cklFieldResearch.FormattingEnabled = true;
-            cklFieldResearch.Location = new Point(68, 264);
+            cklFieldResearch.Location = new Point(141, 239);
             cklFieldResearch.Name = "cklFieldResearch";
-            cklFieldResearch.Size = new Size(120, 50);
+            cklFieldResearch.Size = new Size(155, 94);
             cklFieldResearch.TabIndex = 15;
             cklFieldResearch.ItemCheck += cklFieldResearch_ItemCheck;
             // 
             // cklDye
             // 
+            cklDye.BackColor = Color.FromArgb(192, 255, 255);
+            cklDye.BorderStyle = BorderStyle.FixedSingle;
             cklDye.CheckOnClick = true;
             cklDye.Font = new Font("Sitka Banner", 12F);
             cklDye.FormattingEnabled = true;
-            cklDye.Location = new Point(68, 42);
+            cklDye.Location = new Point(71, 95);
             cklDye.Name = "cklDye";
-            cklDye.Size = new Size(120, 50);
+            cklDye.Size = new Size(155, 94);
             cklDye.TabIndex = 13;
             cklDye.ItemCheck += cklDye_ItemCheck;
             // 
             // cklChefs
             // 
+            cklChefs.BackColor = Color.FromArgb(255, 192, 192);
+            cklChefs.BorderStyle = BorderStyle.FixedSingle;
             cklChefs.CheckOnClick = true;
             cklChefs.Font = new Font("Sitka Banner", 12F);
             cklChefs.FormattingEnabled = true;
-            cklChefs.Location = new Point(228, 152);
+            cklChefs.Location = new Point(295, 61);
             cklChefs.Name = "cklChefs";
-            cklChefs.Size = new Size(120, 50);
+            cklChefs.Size = new Size(155, 94);
             cklChefs.TabIndex = 12;
             cklChefs.ItemCheck += cklChefs_ItemCheck;
             // 
@@ -149,17 +170,21 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(568, 405);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(763, 383);
+            Controls.Add(lblEnchanters);
+            Controls.Add(lblFodder);
+            Controls.Add(lblFieldResearch);
+            Controls.Add(lblDye);
+            Controls.Add(lblChefs);
             Controls.Add(cklEnchanters);
             Controls.Add(cklFodder);
             Controls.Add(cklFieldResearch);
             Controls.Add(cklDye);
             Controls.Add(cklChefs);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "BulletinBoardForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Bulletin Board Bundles";
@@ -170,11 +195,11 @@
 
         #endregion
 
-        private Label label6;
-		private Label label5;
-		private Label label4;
-		private Label label2;
-		private Label label1;
+        private Label lblEnchanters;
+		private Label lblFodder;
+		private Label lblFieldResearch;
+		private Label lblDye;
+		private Label lblChefs;
 		private CheckedListBox cklEnchanters;
 		private CheckedListBox cklFodder;
 		private CheckedListBox cklFieldResearch;
