@@ -35,7 +35,7 @@
             btnPantry = new Button();
             btnFishTank = new Button();
             btnBoilerRoom = new Button();
-            btnAbandonedJojomart = new Button();
+            btnAbandonedJojamart = new Button();
             SuspendLayout();
             // 
             // btnCraftsRoom
@@ -128,21 +128,21 @@
             btnBoilerRoom.MouseEnter += btnBoilerRoom_MouseEnter;
             btnBoilerRoom.MouseLeave += btnBoilerRoom_MouseLeave;
             // 
-            // btnAbandonedJojomart
+            // btnAbandonedJojamart
             // 
-            btnAbandonedJojomart.BackColor = Color.FromArgb(255, 215, 137);
-            btnAbandonedJojomart.Font = new Font("Reem Kufi", 12F);
-            btnAbandonedJojomart.Location = new Point(230, 147);
-            btnAbandonedJojomart.Name = "btnAbandonedJojomart";
-            btnAbandonedJojomart.Size = new Size(117, 75);
-            btnAbandonedJojomart.TabIndex = 6;
-            btnAbandonedJojomart.Text = "Abandoned JojoMart";
-            btnAbandonedJojomart.UseVisualStyleBackColor = false;
-            btnAbandonedJojomart.Visible = false;
-            btnAbandonedJojomart.Click += btnAbandonedJojomart_Click;
-            btnAbandonedJojomart.Paint += btnAbandonedJojomart_Paint;
-            btnAbandonedJojomart.MouseEnter += btnAbandonedJojomart_MouseEnter;
-            btnAbandonedJojomart.MouseLeave += btnAbandonedJojomart_MouseLeave;
+            btnAbandonedJojamart.BackColor = Color.FromArgb(255, 215, 137);
+            btnAbandonedJojamart.Font = new Font("Reem Kufi", 12F);
+            btnAbandonedJojamart.Location = new Point(230, 147);
+            btnAbandonedJojamart.Name = "btnAbandonedJojamart";
+            btnAbandonedJojamart.Size = new Size(117, 75);
+            btnAbandonedJojamart.TabIndex = 6;
+            btnAbandonedJojamart.Text = "Abandoned JojaMart";
+            btnAbandonedJojamart.UseVisualStyleBackColor = false;
+            btnAbandonedJojamart.Visible = false;
+            btnAbandonedJojamart.Click += btnAbandonedJojamart_Click;
+            btnAbandonedJojamart.Paint += btnAbandonedJojamart_Paint;
+            btnAbandonedJojamart.MouseEnter += btnAbandonedJojamart_MouseEnter;
+            btnAbandonedJojamart.MouseLeave += btnAbandonedJojamart_MouseLeave;
             // 
             // RoomsForm
             // 
@@ -151,7 +151,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(572, 383);
-            Controls.Add(btnAbandonedJojomart);
+            Controls.Add(btnAbandonedJojamart);
             Controls.Add(btnBoilerRoom);
             Controls.Add(btnFishTank);
             Controls.Add(btnPantry);
@@ -173,6 +173,6 @@
 		private Button btnPantry;
 		private Button btnFishTank;
 		private Button btnBoilerRoom;
-		private Button btnAbandonedJojomart;
+		private Button btnAbandonedJojamart;
 	}
 }

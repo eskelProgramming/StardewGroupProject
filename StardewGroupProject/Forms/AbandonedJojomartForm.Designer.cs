@@ -1,6 +1,6 @@
 ﻿namespace StardewGroupProject.Forms
 {
-	partial class AbandonedJojomartForm
+	partial class AbandonedJojamartForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,47 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AbandonedJojamartForm));
+            lblMissingBundle = new Label();
             cklMissingBundle = new CheckedListBox();
             SuspendLayout();
             // 
-            // label1
+            // lblMissingBundle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 12F);
-            label1.Location = new Point(110, 58);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 23);
-            label1.TabIndex = 20;
-            label1.Text = "Missing Bundle";
+            lblMissingBundle.AutoSize = true;
+            lblMissingBundle.BackColor = Color.FromArgb(192, 192, 255);
+            lblMissingBundle.Font = new Font("Reem Kufi", 12F);
+            lblMissingBundle.Location = new Point(148, 19);
+            lblMissingBundle.Name = "lblMissingBundle";
+            lblMissingBundle.Size = new Size(121, 30);
+            lblMissingBundle.TabIndex = 20;
+            lblMissingBundle.Text = "Missing Bundle";
+            lblMissingBundle.Paint += lblMissingBundle_Paint;
             // 
             // cklMissingBundle
             // 
+            cklMissingBundle.BackColor = Color.FromArgb(192, 192, 255);
             cklMissingBundle.CheckOnClick = true;
             cklMissingBundle.Font = new Font("Sitka Banner", 12F);
             cklMissingBundle.FormattingEnabled = true;
-            cklMissingBundle.Location = new Point(103, 84);
+            cklMissingBundle.Location = new Point(148, 52);
             cklMissingBundle.Name = "cklMissingBundle";
-            cklMissingBundle.Size = new Size(120, 73);
+            cklMissingBundle.Size = new Size(120, 142);
             cklMissingBundle.TabIndex = 19;
             // 
-            // AbandonedJojomartForm
+            // AbandonedJojamartForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(320, 231);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(416, 210);
+            Controls.Add(lblMissingBundle);
             Controls.Add(cklMissingBundle);
-            Name = "AbandonedJojomartForm";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "AbandonedJojamartForm";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "Abandoned JojoMart";
+            Text = "Abandoned JojaMart";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label lblMissingBundle;
 		private CheckedListBox cklMissingBundle;
 	}
 }

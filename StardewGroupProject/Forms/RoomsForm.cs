@@ -64,9 +64,9 @@ namespace StardewGroupProject
             vault.ShowDialog();
         }
 
-        private void btnAbandonedJojomart_Click(object sender, EventArgs e)
+        private void btnAbandonedJojamart_Click(object sender, EventArgs e)
         {
-            AbandonedJojomartForm abandonedJojomart = new();
+            AbandonedJojamartForm abandonedJojomart = new();
             abandonedJojomart.ShowDialog();
         }
 
@@ -151,7 +151,7 @@ namespace StardewGroupProject
             }
         }
 
-        private void btnAbandonedJojomart_Paint(object sender, PaintEventArgs e)
+        private void btnAbandonedJojamart_Paint(object sender, PaintEventArgs e)
         {
             System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
 
@@ -289,14 +289,14 @@ namespace StardewGroupProject
             btnCraftsRoom.BackColor = Color.FromArgb(255, 215, 137);
         }
 
-        private void btnAbandonedJojomart_MouseEnter(object sender, EventArgs e)
+        private void btnAbandonedJojamart_MouseEnter(object sender, EventArgs e)
         {
-            btnAbandonedJojomart.BackColor = Color.FromArgb(214, 180, 116);
+            btnAbandonedJojamart.BackColor = Color.FromArgb(214, 180, 116);
         }
 
-        private void btnAbandonedJojomart_MouseLeave(object sender, EventArgs e)
+        private void btnAbandonedJojamart_MouseLeave(object sender, EventArgs e)
         {
-            btnAbandonedJojomart.BackColor = Color.FromArgb(255, 215, 137);
+            btnAbandonedJojamart.BackColor = Color.FromArgb(255, 215, 137);
         }
 
         private void btnBoilerRoom_MouseEnter(object sender, EventArgs e)
