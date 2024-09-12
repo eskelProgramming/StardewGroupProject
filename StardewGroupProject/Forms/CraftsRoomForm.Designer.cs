@@ -46,72 +46,78 @@
             // cklSpringForaging
             // 
             cklSpringForaging.BackColor = Color.FromArgb(192, 255, 192);
+            cklSpringForaging.BorderStyle = BorderStyle.FixedSingle;
             cklSpringForaging.CheckOnClick = true;
             cklSpringForaging.Font = new Font("Sitka Banner", 12F);
             cklSpringForaging.FormattingEnabled = true;
             cklSpringForaging.Location = new Point(289, 54);
             cklSpringForaging.Name = "cklSpringForaging";
-            cklSpringForaging.Size = new Size(158, 96);
+            cklSpringForaging.Size = new Size(158, 94);
             cklSpringForaging.TabIndex = 0;
             cklSpringForaging.ItemCheck += cklSpringForaging_ItemCheck;
             // 
             // cklWinterForaging
             // 
             cklWinterForaging.BackColor = Color.FromArgb(192, 255, 255);
+            cklWinterForaging.BorderStyle = BorderStyle.FixedSingle;
             cklWinterForaging.CheckOnClick = true;
             cklWinterForaging.Font = new Font("Sitka Banner", 12F);
             cklWinterForaging.FormattingEnabled = true;
             cklWinterForaging.Location = new Point(114, 89);
             cklWinterForaging.Name = "cklWinterForaging";
-            cklWinterForaging.Size = new Size(120, 96);
+            cklWinterForaging.Size = new Size(120, 94);
             cklWinterForaging.TabIndex = 1;
             cklWinterForaging.ItemCheck += cklWinterForaging_ItemCheck;
             // 
             // cklExoticForaging
             // 
             cklExoticForaging.BackColor = Color.FromArgb(255, 192, 255);
+            cklExoticForaging.BorderStyle = BorderStyle.FixedSingle;
             cklExoticForaging.CheckOnClick = true;
             cklExoticForaging.Font = new Font("Sitka Banner", 12F);
             cklExoticForaging.FormattingEnabled = true;
             cklExoticForaging.Location = new Point(289, 219);
             cklExoticForaging.Name = "cklExoticForaging";
-            cklExoticForaging.Size = new Size(158, 96);
+            cklExoticForaging.Size = new Size(158, 94);
             cklExoticForaging.TabIndex = 2;
             cklExoticForaging.ItemCheck += cklExoticForaging_ItemCheck;
             // 
             // cklSummerForaging
             // 
             cklSummerForaging.BackColor = Color.FromArgb(255, 255, 192);
+            cklSummerForaging.BorderStyle = BorderStyle.FixedSingle;
             cklSummerForaging.CheckOnClick = true;
             cklSummerForaging.Font = new Font("Sitka Banner", 12F);
             cklSummerForaging.FormattingEnabled = true;
             cklSummerForaging.Location = new Point(89, 242);
             cklSummerForaging.Name = "cklSummerForaging";
-            cklSummerForaging.Size = new Size(151, 96);
+            cklSummerForaging.Size = new Size(151, 94);
             cklSummerForaging.TabIndex = 3;
             cklSummerForaging.ItemCheck += cklSummerForaging_ItemCheck;
             // 
             // cklConstruction
             // 
             cklConstruction.BackColor = Color.FromArgb(255, 192, 192);
+            cklConstruction.BorderStyle = BorderStyle.FixedSingle;
             cklConstruction.CheckOnClick = true;
             cklConstruction.Font = new Font("Sitka Banner", 12F);
             cklConstruction.FormattingEnabled = true;
             cklConstruction.Location = new Point(506, 87);
             cklConstruction.Name = "cklConstruction";
-            cklConstruction.Size = new Size(120, 96);
+            cklConstruction.Size = new Size(120, 94);
             cklConstruction.TabIndex = 4;
             cklConstruction.ItemCheck += cklConstruction_ItemCheck;
             // 
             // cklFallForaging
             // 
             cklFallForaging.BackColor = Color.FromArgb(255, 224, 192);
+            cklFallForaging.BorderStyle = BorderStyle.FixedSingle;
             cklFallForaging.CheckOnClick = true;
             cklFallForaging.Font = new Font("Sitka Banner", 12F);
             cklFallForaging.FormattingEnabled = true;
             cklFallForaging.Location = new Point(497, 242);
             cklFallForaging.Name = "cklFallForaging";
-            cklFallForaging.Size = new Size(151, 96);
+            cklFallForaging.Size = new Size(151, 94);
             cklFallForaging.TabIndex = 5;
             cklFallForaging.ItemCheck += cklFallForaging_ItemCheck;
             // 

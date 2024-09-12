@@ -118,72 +118,78 @@
             // cklOceanFish
             // 
             cklOceanFish.BackColor = Color.FromArgb(192, 192, 255);
+            cklOceanFish.BorderStyle = BorderStyle.FixedSingle;
             cklOceanFish.CheckOnClick = true;
             cklOceanFish.Font = new Font("Sitka Banner", 12F);
             cklOceanFish.FormattingEnabled = true;
             cklOceanFish.Location = new Point(472, 236);
             cklOceanFish.Name = "cklOceanFish";
-            cklOceanFish.Size = new Size(120, 96);
+            cklOceanFish.Size = new Size(120, 94);
             cklOceanFish.TabIndex = 17;
             cklOceanFish.ItemCheck += cklOceanFish_ItemCheck;
             // 
             // cklSpecialtyFish
             // 
             cklSpecialtyFish.BackColor = Color.FromArgb(255, 192, 192);
+            cklSpecialtyFish.BorderStyle = BorderStyle.FixedSingle;
             cklSpecialtyFish.CheckOnClick = true;
             cklSpecialtyFish.Font = new Font("Sitka Banner", 12F);
             cklSpecialtyFish.FormattingEnabled = true;
             cklSpecialtyFish.Location = new Point(498, 86);
             cklSpecialtyFish.Name = "cklSpecialtyFish";
-            cklSpecialtyFish.Size = new Size(120, 96);
+            cklSpecialtyFish.Size = new Size(120, 94);
             cklSpecialtyFish.TabIndex = 16;
             cklSpecialtyFish.ItemCheck += cklSpecialtyFish_ItemCheck;
             // 
             // cklLakeFish
             // 
             cklLakeFish.BackColor = Color.FromArgb(192, 255, 192);
+            cklLakeFish.BorderStyle = BorderStyle.FixedSingle;
             cklLakeFish.CheckOnClick = true;
             cklLakeFish.Font = new Font("Sitka Banner", 12F);
             cklLakeFish.FormattingEnabled = true;
             cklLakeFish.Location = new Point(136, 236);
             cklLakeFish.Name = "cklLakeFish";
-            cklLakeFish.Size = new Size(120, 96);
+            cklLakeFish.Size = new Size(120, 94);
             cklLakeFish.TabIndex = 15;
             cklLakeFish.ItemCheck += cklLakeFish_ItemCheck;
             // 
             // cklCrabPot
             // 
             cklCrabPot.BackColor = Color.FromArgb(255, 192, 255);
+            cklCrabPot.BorderStyle = BorderStyle.FixedSingle;
             cklCrabPot.CheckOnClick = true;
             cklCrabPot.Font = new Font("Sitka Banner", 12F);
             cklCrabPot.FormattingEnabled = true;
             cklCrabPot.Location = new Point(309, 206);
             cklCrabPot.Name = "cklCrabPot";
-            cklCrabPot.Size = new Size(120, 96);
+            cklCrabPot.Size = new Size(120, 94);
             cklCrabPot.TabIndex = 14;
             cklCrabPot.ItemCheck += cklCrabPot_ItemCheck;
             // 
             // cklNightFishing
             // 
             cklNightFishing.BackColor = Color.FromArgb(255, 192, 255);
+            cklNightFishing.BorderStyle = BorderStyle.FixedSingle;
             cklNightFishing.CheckOnClick = true;
             cklNightFishing.Font = new Font("Sitka Banner", 12F);
             cklNightFishing.FormattingEnabled = true;
             cklNightFishing.Location = new Point(114, 86);
             cklNightFishing.Name = "cklNightFishing";
-            cklNightFishing.Size = new Size(120, 96);
+            cklNightFishing.Size = new Size(120, 94);
             cklNightFishing.TabIndex = 13;
             cklNightFishing.ItemCheck += cklNightFishing_ItemCheck;
             // 
             // cklRiverFish
             // 
             cklRiverFish.BackColor = Color.FromArgb(192, 255, 255);
+            cklRiverFish.BorderStyle = BorderStyle.FixedSingle;
             cklRiverFish.CheckOnClick = true;
             cklRiverFish.Font = new Font("Sitka Banner", 12F);
             cklRiverFish.FormattingEnabled = true;
             cklRiverFish.Location = new Point(309, 53);
             cklRiverFish.Name = "cklRiverFish";
-            cklRiverFish.Size = new Size(120, 96);
+            cklRiverFish.Size = new Size(120, 94);
             cklRiverFish.TabIndex = 12;
             cklRiverFish.ItemCheck += cklRiverFish_ItemCheck;
             // 
